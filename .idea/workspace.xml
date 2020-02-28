@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="" />
+    <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryCategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryCategoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryCategoryTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,7 +32,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YR2G7ZjYWpAWOCCR2x1p6b0Dkb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource/lib/com.spreada.utils.chinese.ZHConverter-1.0.jar!/" />
@@ -57,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PoetryCategoryTest.save">
+  <component name="RunManager" selected="JUnit.PoetryCategoryTest.add">
     <configuration name="CategoryTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
@@ -69,6 +79,22 @@
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.CategoryTest" />
       <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoetryCategoryTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyPoetry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chajiu.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryCategoryTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PoetryCategoryTest.add" />
         <item itemvalue="JUnit.PoetryCategoryTest.save" />
         <item itemvalue="JUnit.PoetryTest.findOne" />
         <item itemvalue="JUnit.CategoryTest.findAll" />
@@ -125,11 +152,22 @@
       <option name="presentableId" value="Default" />
       <updated>1582890987222</updated>
       <workItem from="1582890990313" duration="1286000" />
-      <workItem from="1582892291161" duration="3283000" />
+      <workItem from="1582892291161" duration="5404000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
