@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.List;
 
 @Controller
@@ -33,19 +35,23 @@ public class CategoryController {
         return response;
     }
 
+
     /**
-     * 查找一个分类
-     * @param id
+     * 依据id或者name查找一个分类
+     * @param
      * @return
      */
-    @RequestMapping(value = "/category/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = {"/category/id/{id}","/category/name/{name}"},method = RequestMethod.GET)
     @ResponseBody
-    public Response<Category> findOne(@PathVariable Integer id){
-        Category category=new Category();
-        category.setId(id);
-
+    public Response<Category> findOne(@PathVariable(required = false) Integer id,@PathVariable(required = false) String name){
         Response<Category> response=new Response<>();
+        Category category=new Category();
 
+        if(id!=null){
+            category.setId(id);
+        }else if (name!=null){
+            category.setName(name);
+        }
         try {
             category=service.findOne(category);
             response.setData(category);
@@ -54,6 +60,8 @@ public class CategoryController {
             response.setMessage(e.getMessage());
         }
         return response;
+
+
     }
 
 
