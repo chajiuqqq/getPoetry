@@ -1,6 +1,8 @@
 package com.chajiu.pojo;
 
 
+import com.chajiu.util.LangConverter;
+
 public class Poetry {
 
     private Integer id;
@@ -83,4 +85,12 @@ public class Poetry {
                 ", dynasty='" + dynasty + '\'' +
                 '}';
     }
+
+    public Poetry toSimpleInstance(){
+        title= LangConverter.toSimple(title);
+        content=LangConverter.toSimple(content);
+        return this;
+    }
+
+
 }

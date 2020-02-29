@@ -81,7 +81,7 @@ public class DataUtil {
      * @param index
      * @return
      */
-    public Map<String,Integer> getMapper(String originStr,Integer index){
+    private Map<String,Integer> getMapper(String originStr,Integer index){
         Map<String,Integer> map=new HashMap<>();
         originStr=toTraditional(originStr);
         String[] items = originStr.split("\\(([\\u4E00-\\u9FA5]+)\\)\\s");
@@ -96,7 +96,7 @@ public class DataUtil {
      * @param str
      * @return
      */
-    public String toTraditional(String str){
+    private String toTraditional(String str){
         return converter.convert(str);
     }
 

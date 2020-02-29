@@ -39,4 +39,11 @@ public class Category {
     public void setPoetries(List<Poetry> poetries) {
         this.poetries = poetries;
     }
+
+    public Category toSimple(){
+        for(Poetry poetry:poetries){
+            poetry.toSimpleInstance();
+        }
+        return this;
+    }
 }

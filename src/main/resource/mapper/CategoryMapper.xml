@@ -5,12 +5,12 @@
 
 <mapper namespace="com.chajiu.mapper.CategoryMapper">
 
-<!--    <resultMap id="categoryBean" type="category">-->
-<!--        <id property="id" column="id"/>-->
-<!--        <result property="name" column="name"/>-->
-<!--        -->
-<!--    </resultMap>-->
-<!--    -->
+    <resultMap id="categoryBean" type="category">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="poetries" column="id" ofType="com.chajiu.pojo.Poetry" select="com.chajiu.mapper.PoetryCategoryMapper.findPoetriesByCategory"/>
+    </resultMap>
+
 
     <select id="findAll" resultType="category">
         select * from category
@@ -20,7 +20,7 @@
         insert into category(name) values(#{name})
     </insert>
 
-    <select id="findOne" parameterType="category" resultType="category">
+    <select id="findOne" parameterType="category" resultMap="categoryBean">
         select * from category
         <where>
             <choose>

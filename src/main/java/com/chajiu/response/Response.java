@@ -10,28 +10,43 @@ public class Response<T>{
         code=ResponseCodeType.SUCCESS;
     }
 
-    public Integer getCode() {
-        return code;
-    }
-
     public void setCode(Integer code) {
         this.code = code;
-    }
-
-    public T getData() {
-        return data;
     }
 
     public void setData(T data) {
         this.data = data;
     }
 
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public Response code(Integer code) {
+        this.code = code;
+        return this;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public Response data(T data) {
+        this.data = data;
+        return this;
+    }
+
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public Response message(String message) {
         this.message = message;
+        return this;
     }
 
     @Override

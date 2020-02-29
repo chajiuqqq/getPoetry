@@ -1,6 +1,7 @@
 package com.chajiu.service.Impl;
 import com.chajiu.mapper.CategoryMapper;
 import com.chajiu.pojo.Category;
+import com.chajiu.pojo.Poetry;
 import com.chajiu.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category findOne(Category category) {
-        return categoryMapper.findOne(category);
+        return categoryMapper.findOne(category).toSimple();
     }
 
     @Override
@@ -36,4 +37,8 @@ public class CategoryServiceImpl implements CategoryService {
     public void update(Category category) {
         categoryMapper.update(category);
     }
+
+
+
+
 }

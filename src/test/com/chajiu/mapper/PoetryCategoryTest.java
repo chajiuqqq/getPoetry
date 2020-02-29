@@ -75,4 +75,11 @@ public class PoetryCategoryTest {
 
     }
 
+    @Test
+    public void findPoetriesByCategory(){
+        System.out.println(poetryCategoryMapper.findPoetriesByCategory(118));
+    }
+
+
+
 }

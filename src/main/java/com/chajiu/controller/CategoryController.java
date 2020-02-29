@@ -1,12 +1,16 @@
 package com.chajiu.controller;
 
 import com.chajiu.pojo.Category;
+import com.chajiu.response.Response;
+import com.chajiu.response.ResponseCodeType;
 import com.chajiu.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Controller
 public class CategoryController {
     @Autowired
     CategoryService service;
@@ -17,9 +21,16 @@ public class CategoryController {
      */
     @RequestMapping(value = "/categories",method = RequestMethod.GET)
     @ResponseBody
-    public List<Category> findAll(){
-        List<Category> list = service.findAll();
-        return list;
+    public Response<List<Category>> findAll(){
+        Response<List<Category>> response=new Response<>();
+        try {
+            List<Category> list = service.findAll();
+            response.setData(list);
+        }catch (Exception e){
+            response.setCode(ResponseCodeType.ERROR_500);
+            response.setMessage(e.getMessage());
+        }
+        return response;
     }
 
     /**
@@ -29,11 +40,20 @@ public class CategoryController {
      */
     @RequestMapping(value = "/category/{id}",method = RequestMethod.GET)
     @ResponseBody
-    public Category findOne(@PathVariable Integer id){
+    public Response<Category> findOne(@PathVariable Integer id){
         Category category=new Category();
         category.setId(id);
-        category=service.findOne(category);
-        return category;
+
+        Response<Category> response=new Response<>();
+
+        try {
+            category=service.findOne(category);
+            response.setData(category);
+        }catch (Exception e){
+            response.setCode(ResponseCodeType.ERROR_500);
+            response.setMessage(e.getMessage());
+        }
+        return response;
     }
 
 
@@ -44,9 +64,15 @@ public class CategoryController {
      */
     @RequestMapping(value = "/category/{id}",method = RequestMethod.DELETE)
     @ResponseBody
-    public String delete(@PathVariable Integer id){
-        service.delete(id);
-        return "ok";
+    public Response<String> delete(@PathVariable Integer id){
+        Response<String> response=new Response<>();
+        try {
+            service.delete(id);
+        }catch (Exception e){
+            response.setCode(ResponseCodeType.ERROR_500);
+            response.setMessage(e.getMessage());
+        }
+        return response;
     }
 
     /**
@@ -56,9 +82,15 @@ public class CategoryController {
      */
     @RequestMapping(value = "/category",method = RequestMethod.PUT)
     @ResponseBody
-    public String update(@RequestBody Category category){
-        service.update(category);
-        return "ok";
+    public Response<String> update(@RequestBody Category category){
+        Response<String> response=new Response<>();
+       try {
+           service.update(category);
+       }catch (Exception e){
+           response.setCode(ResponseCodeType.ERROR_500);
+           response.setMessage(e.getMessage());
+       }
+        return response;
     }
 
     /**
@@ -68,8 +100,14 @@ public class CategoryController {
      */
     @RequestMapping(value = "/category",method = RequestMethod.POST)
     @ResponseBody
-    public String save(@RequestBody Category category){
-        service.save(category);
-        return "ok";
+    public Response<String> save(@RequestBody Category category){
+        Response<String> response=new Response<>();
+        try {
+            service.save(category);
+        }catch (Exception e){
+            response.setCode(ResponseCodeType.ERROR_500);
+            response.setMessage(e.getMessage());
+        }
+        return response;
     }
 }
