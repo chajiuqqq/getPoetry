@@ -26,9 +26,12 @@ public class CategoryTest {
 
     @Test
     public void findOne(){
-        Category category=new Category();
-        category.setId(118);
-        System.out.println(service.findOne(category).getPoetries());
+        System.out.println(service.findOne(118).getPoetries());
+    }
+
+    @Test
+    public void findPossible(){
+        System.out.println(service.findPossibleCategory("爱"));
     }
 
 }

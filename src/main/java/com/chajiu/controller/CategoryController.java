@@ -13,6 +13,7 @@ import java.net.URLDecoder;
 import java.util.List;
 
 @Controller
+@RequestMapping("/api")
 public class CategoryController {
     @Autowired
     CategoryService service;
@@ -37,23 +38,17 @@ public class CategoryController {
 
 
     /**
-     * 依据id或者name查找一个分类
+     * 依据id查找一个分类
      * @param
      * @return
      */
-    @RequestMapping(value = {"/category/id/{id}","/category/name/{name}"},method = RequestMethod.GET)
+    @RequestMapping(value = "/category/id/{id}",method = RequestMethod.GET)
     @ResponseBody
-    public Response<Category> findOne(@PathVariable(required = false) Integer id,@PathVariable(required = false) String name){
+    public Response<Category> findOne(@PathVariable(required = true) Integer id){
         Response<Category> response=new Response<>();
-        Category category=new Category();
 
-        if(id!=null){
-            category.setId(id);
-        }else if (name!=null){
-            category.setName(name);
-        }
         try {
-            category=service.findOne(category);
+            Category category = service.findOne(id);
             response.setData(category);
         }catch (Exception e){
             response.setCode(ResponseCodeType.ERROR_500);
@@ -62,6 +57,25 @@ public class CategoryController {
         return response;
 
 
+    }
+
+
+    /**
+     * 模糊查询分类
+     * @return
+     */
+    @RequestMapping(value = "/category/name/{name}",method = RequestMethod.GET)
+    @ResponseBody
+    public Response<List<Category>> findPossibleCategory(@PathVariable String name){
+        Response<List<Category>> response=new Response<>();
+        try {
+            List<Category> categoryList = service.findPossibleCategory(name);
+            response.setData(categoryList);
+        }catch (Exception e){
+            response.setCode(ResponseCodeType.ERROR_500);
+            response.setMessage(e.getMessage());
+        }
+        return response;
     }
 
 

@@ -19,8 +19,8 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Category findOne(Category category) {
-        return categoryMapper.findOne(category).toSimple();
+    public Category findOne(Integer id) {
+        return categoryMapper.findOne(id).toSimple();
     }
 
     @Override
@@ -38,7 +38,10 @@ public class CategoryServiceImpl implements CategoryService {
         categoryMapper.update(category);
     }
 
-
+    @Override
+    public List<Category> findPossibleCategory(String name) {
+        return categoryMapper.findPossibleCategory(name);
+    }
 
 
 }

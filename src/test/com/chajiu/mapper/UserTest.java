@@ -34,12 +34,16 @@ public class UserTest {
     @Test
     public void save(){
         User user=new User();
-        user.setName("zyy");
+        user.setName("zyyy");
         user.setUsername("usernamezyy");
         user.setPassword("pwdzyy");
         user.setEmail("zyy@gmail.com");
 
-        service.save(user);
+        try {
+            service.save(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

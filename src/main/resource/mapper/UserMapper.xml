@@ -35,4 +35,8 @@
     <delete id="delete" parameterType="int">
         delete from user where id=#{id}
     </delete>
+
+    <select id="check" parameterType="user" resultType="int">
+        select count(*) from user where username=#{username} AND password=#{password}
+    </select>
 </mapper>
