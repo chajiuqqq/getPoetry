@@ -3,6 +3,8 @@ package com.chajiu.pojo;
 
 import com.chajiu.util.LangConverter;
 
+import java.util.List;
+
 public class Poetry {
 
     private Integer id;
@@ -16,6 +18,26 @@ public class Poetry {
     private String yunlvRule;
 
     private String dynasty;
+
+    private PoetryAuthor poetryAuthor;
+
+    private List<Category> categories;
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
+
+    public PoetryAuthor getPoetryAuthor() {
+        return poetryAuthor;
+    }
+
+    public void setPoetryAuthor(PoetryAuthor poetryAuthor) {
+        this.poetryAuthor = poetryAuthor;
+    }
 
     public Integer getId() {
         return id;
@@ -89,8 +111,14 @@ public class Poetry {
     public Poetry toSimpleInstance(){
         title= LangConverter.toSimple(title);
         content=LangConverter.toSimple(content);
+        author=LangConverter.toSimple(author);
+        if(poetryAuthor!=null)
+            poetryAuthor=poetryAuthor.toSimpleInstance();
         return this;
     }
+
+
+
 
 
 }

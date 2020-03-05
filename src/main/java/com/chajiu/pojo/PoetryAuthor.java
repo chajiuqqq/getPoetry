@@ -2,11 +2,15 @@ package com.chajiu.pojo;
 
 import com.chajiu.util.LangConverter;
 
+import java.util.List;
+
 public class PoetryAuthor {
     private Integer id;
     private String name;
     private String intro;
     private String dynasty;
+
+    private List<Poetry> poetries;
 
     @Override
     public String toString() {
@@ -16,6 +20,14 @@ public class PoetryAuthor {
                 ", intro='" + intro + '\'' +
                 ", dynasty='" + dynasty + '\'' +
                 '}';
+    }
+
+    public List<Poetry> getPoetries() {
+        return poetries;
+    }
+
+    public void setPoetries(List<Poetry> poetries) {
+        this.poetries = poetries;
     }
 
     public Integer getId() {

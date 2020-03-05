@@ -40,7 +40,7 @@ public class Category {
         this.poetries = poetries;
     }
 
-    public Category toSimple(){
+    public Category toSimpleInstance(){
         for(Poetry poetry:poetries){
             poetry.toSimpleInstance();
         }

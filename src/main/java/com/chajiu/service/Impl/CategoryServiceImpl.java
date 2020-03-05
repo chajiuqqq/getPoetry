@@ -20,7 +20,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category findOne(Integer id) {
-        return categoryMapper.findOne(id).toSimple();
+        return categoryMapper.findOne(id).toSimpleInstance();
     }
 
     @Override

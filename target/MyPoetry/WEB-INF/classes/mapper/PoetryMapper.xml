@@ -4,7 +4,29 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.chajiu.mapper.PoetryMapper">
-    <select id="findOne" parameterType="poetry" resultType="poetry">
+    <resultMap id="poetryBean" type="poetry">
+        <id property="id" column="id"/>
+        <result property="authorId" column="author_id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="yunlvRule" column="yunlv_rule"/>
+        <result property="author" column="author"/>
+        <result property="dynasty" column="dynasty"/>
+        <association property="poetryAuthor" javaType="poetryAuthor" column="author_id" select="com.chajiu.mapper.PoetryAuthorMapper.findOne"/>
+        <collection property="categories" ofType="category" column="id" select="com.chajiu.mapper.CategoryMapper.findByPid"/>
+    </resultMap>
+
+    <resultMap id="simplePoetryBean" type="poetry">
+        <id property="id" column="id"/>
+        <result property="authorId" column="author_id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="yunlvRule" column="yunlv_rule"/>
+        <result property="author" column="author"/>
+        <result property="dynasty" column="dynasty"/>
+    </resultMap>
+
+    <select id="findOne" parameterType="poetry" resultMap="poetryBean">
         select * from poetry
         <where>
             <choose>
@@ -12,9 +34,14 @@
                     AND id=#{id}
                 </when>
                 <when test="title!=null">
-                    AND title=#{title}
+                    title=#{title}
                 </when>
             </choose>
         </where>
     </select>
+    
+    <select id="findByAuthorId" parameterType="int" resultMap="simplePoetryBean">
+        select * from poetry where author_id=#{id}
+    </select>
+
 </mapper>

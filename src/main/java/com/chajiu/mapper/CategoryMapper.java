@@ -25,6 +25,7 @@ public interface CategoryMapper {
      */
     List<Category> findPossibleCategory(String name);
 
+    List<Category> findByPid(Integer pid);
 
     void save(Category category);
     void delete(Integer id);
