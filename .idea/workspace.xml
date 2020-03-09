@@ -7,46 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/PoetryAuthorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/PoetryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/ArticleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/ArticleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/mapper/ArticleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Poetry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Poetry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/CategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/PoetryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/PoetryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/pojo/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/pojo/Poetry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/pojo/Poetry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/pojo/PoetryAuthor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/pojo/PoetryAuthor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/Impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/Impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/PoetryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/PoetryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/PoetryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/PoetryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/CategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/PoetryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/PoetryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/pojo/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/pojo/Poetry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/pojo/Poetry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/pojo/PoetryAuthor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/pojo/PoetryAuthor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/service/Impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/service/Impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/service/PoetryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/service/PoetryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PoetryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PoetryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryCategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/lib/jackson-core-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/lib/jackson-databind-2.9.9.jar" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +88,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.64">
-    <configuration name="CategoryTest.findPossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
         <pattern>
@@ -123,14 +97,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.CategoryTest" />
-      <option name="METHOD_NAME" value="findPossible" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.ArticleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyPoetry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chajiu.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.ArticleTest" />
+      <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoetryAuthorTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleTest.findByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
         <pattern>
@@ -139,14 +128,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryAuthorTest" />
-      <option name="METHOD_NAME" value="findOne" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.ArticleTest" />
+      <option name="METHOD_NAME" value="findByTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoetryTest.findByAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
         <pattern>
@@ -155,14 +144,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryTest" />
-      <option name="METHOD_NAME" value="findByAuthor" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.ArticleTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoetryTest.findByAuthorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleTest.total" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
         <pattern>
@@ -171,24 +160,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryTest" />
-      <option name="METHOD_NAME" value="findByAuthorId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PoetryTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyPoetry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chajiu.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryTest" />
-      <option name="METHOD_NAME" value="findOne" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.ArticleTest" />
+      <option name="METHOD_NAME" value="total" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -268,20 +241,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CategoryTest.findPossible" />
-      <item itemvalue="JUnit.PoetryAuthorTest.findOne" />
-      <item itemvalue="JUnit.PoetryTest.findOne" />
-      <item itemvalue="JUnit.PoetryTest.findByAuthor" />
-      <item itemvalue="JUnit.PoetryTest.findByAuthorId" />
+      <item itemvalue="JUnit.ArticleTest.save" />
+      <item itemvalue="JUnit.ArticleTest.total" />
+      <item itemvalue="JUnit.ArticleTest.findByTitle" />
+      <item itemvalue="JUnit.ArticleTest" />
+      <item itemvalue="JUnit.ArticleTest.findAll" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PoetryTest.findOne" />
-        <item itemvalue="JUnit.PoetryTest.findByAuthorId" />
-        <item itemvalue="JUnit.PoetryTest.findByAuthor" />
-        <item itemvalue="JUnit.PoetryAuthorTest.findOne" />
-        <item itemvalue="JUnit.CategoryTest.findPossible" />
+        <item itemvalue="JUnit.ArticleTest.save" />
+        <item itemvalue="JUnit.ArticleTest.findAll" />
+        <item itemvalue="JUnit.ArticleTest" />
+        <item itemvalue="JUnit.ArticleTest.findByTitle" />
+        <item itemvalue="JUnit.ArticleTest.total" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +274,10 @@
       <workItem from="1583035372284" duration="16279000" />
       <workItem from="1583112560113" duration="12895000" />
       <workItem from="1583145022701" duration="50000" />
-      <workItem from="1583374596778" duration="1655000" />
+      <workItem from="1583374596778" duration="4031000" />
+      <workItem from="1583557991377" duration="7512000" />
+      <workItem from="1583636618417" duration="5573000" />
+      <workItem from="1583722273709" duration="1069000" />
     </task>
     <servers />
   </component>
