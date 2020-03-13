@@ -124,8 +124,9 @@ input:-ms-input-placeholder {
 				  		})
 					    .then(response =>
 					      { 
-					      	
+					      	console.log("1");
 					      	if(response.data.code == 200){
+					      		console.log("2");
 					      		this.open();
 					      		window.location.href='/view/main.html';
 					      		

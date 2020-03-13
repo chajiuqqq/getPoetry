@@ -227,30 +227,9 @@ a:active{ color:white; text-decoration:none;}
 					history.back();
 				},
 				jump(){
-			   	const url=new URLSearchParams(window.location.search);
-			   	console.log(url.has('title'));
-			   	var urlname = url.get('title');
-		   	   	var uri='/api/poetry/title/'+urlname;
-				axios({
-				 	 method: 'get',
-					  url: uri,
-					 })
-			    .then(response =>
-			      { 
-			      	if(response.data.code==200)
-			      	{
-				        console.log(response);
-				      	// this.$refs.seachinput.value=response.data.data.name;
-				      	this.content = decodeURI(urlname);
-				      	
-			      	}else{
-			      		
-			      	}
-			      	
-			      })
-			      .catch(function (error) { // 请求失败处理
-			        console.log(error);
-			      });
+				   	const url=new URLSearchParams(window.location.search);
+				   	var urlname = url.get('title');
+			   	   	this.content = decodeURI(urlname);
 			  }
 				},
 			mounted:function(){
@@ -324,7 +303,7 @@ a:active{ color:white; text-decoration:none;}
 				   	if(url.has('title')==true)
 				   	{
 						var urltitle = url.get('title');
-				   	   	var uri='/api/poetry/title/'+urltitle;
+				   	   	var uri='/api/poetry/title/'+urltitle+'/start/0/count/10';
 						axios({
 						 	 method: 'get',
 							  url: uri,

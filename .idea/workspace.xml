@@ -7,24 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/js/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/flower.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/flower.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/poem.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/poem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/search_poem.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/search_poem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/search_searchpoem.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/search_searchpoem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/static/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +270,8 @@
       <workItem from="1583752633187" duration="3469000" />
       <workItem from="1583808237917" duration="5043000" />
       <workItem from="1583991596650" duration="21173000" />
-      <workItem from="1584090490845" duration="5012000" />
+      <workItem from="1584090490845" duration="5611000" />
+      <workItem from="1584105148389" duration="705000" />
     </task>
     <servers />
   </component>
