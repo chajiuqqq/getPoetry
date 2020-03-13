@@ -4,6 +4,7 @@ package com.chajiu.mapper;
 import com.chajiu.pojo.Poetry;
 import com.chajiu.pojo.PoetryAuthor;
 import com.chajiu.service.PoetryService;
+import com.chajiu.util.Page;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +23,10 @@ public class PoetryTest {
         Poetry p=new Poetry();
         p.setId(2741);
         Poetry poetry=null;
-        try {
-            poetry = service.findOne(p);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        System.out.println(poetry);
-        System.out.println("\t\t"+poetry.getPoetryAuthor());
-        System.out.println("\t\t"+ poetry.getCategories());
+
+        System.out.println(poetryMapper.findOne(p));
+        System.out.println(poetryMapper.findOne(2741));
+
     }
 
     @Test
@@ -37,4 +34,16 @@ public class PoetryTest {
         System.out.println(poetryMapper.findByAuthorId(1));
     }
 
+
+
+    @Test
+    public void likeTitle(){
+        Page page=new Page();
+        page.setStart(0);
+        page.setCount(5);
+
+        System.out.println(service.findLikeTitle("咏").size());
+        System.out.println(service.findLikeTitle("咏",page).size());
+
+    }
 }

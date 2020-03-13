@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chajiu.mapper.FavourMapper">
+    <resultMap id="favourBean" type="favour">
+        <id property="id" column="id"></id>
+        <result property="userId" column="user_id"></result>
+        <result property="poetryId" column="poetry_id"></result>
+        <result property="createDate" column="create_date"/>
+        <association property="poetry" column="{id=poetry_id}" select="com.chajiu.mapper.PoetryMapper.findOne" javaType="poetry"/>
+    </resultMap>
+
+
+    <select id="findAllByUserId" resultMap="favourBean">
+        select * from favour where user_id=#{uid}
+        <if test="page!=null">
+            limit #{page.start},#{page.count}
+        </if>
+    </select>
+
+    <insert id="save" parameterType="favour">
+        insert into favour(user_id,poetry_id,create_date) values (#{userId},#{poetryId},#{createDate})
+    </insert>
+
+    <delete id="delete" parameterType="favour">
+        delete from favour where poetry_id=#{poetryId}  AND user_id=#{userId};
+    </delete>
+
+    <select id="exist" parameterType="favour" resultType="int">
+        select count(*) from favour where id=#{id} AND user_id=#{userId};
+    </select>
+</mapper>

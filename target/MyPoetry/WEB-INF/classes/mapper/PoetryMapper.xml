@@ -12,7 +12,7 @@
         <result property="yunlvRule" column="yunlv_rule"/>
         <result property="author" column="author"/>
         <result property="dynasty" column="dynasty"/>
-        <association property="poetryAuthor" javaType="poetryAuthor" column="author_id" select="com.chajiu.mapper.PoetryAuthorMapper.findOne"/>
+        <association property="poetryAuthor" javaType="poetryAuthor" column="author_id" select="com.chajiu.mapper.PoetryAuthorMapper.findSimpleOne"/>
         <collection property="categories" ofType="category" column="id" select="com.chajiu.mapper.CategoryMapper.findByPid"/>
     </resultMap>
 
@@ -26,22 +26,21 @@
         <result property="dynasty" column="dynasty"/>
     </resultMap>
 
-    <select id="findOne" parameterType="poetry" resultMap="poetryBean">
-        select * from poetry
-        <where>
-            <choose>
-                <when test="id!=null">
-                    AND id=#{id}
-                </when>
-                <when test="title!=null">
-                    title=#{title}
-                </when>
-            </choose>
-        </where>
+    <select id="findOne" resultMap="poetryBean">
+        select * from poetry where id=#{id}
+    </select>
+
+    <select id="findLikeTitle"  resultMap="poetryBean">
+        select * from poetry where title like concat('%',#{title},'%')
+        <if test="page!=null">
+            limit #{page.start},#{page.count}
+        </if>
     </select>
     
     <select id="findByAuthorId" parameterType="int" resultMap="simplePoetryBean">
         select * from poetry where author_id=#{id}
     </select>
+
+
 
 </mapper>

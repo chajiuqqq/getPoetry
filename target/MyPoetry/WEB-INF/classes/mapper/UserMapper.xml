@@ -8,7 +8,7 @@
         select * from user
     </select>
 
-    <select id="findOne" parameterType="user" resultType="user">
+    <select id="findOne" resultType="user">
         select * from user
         <where>
             <choose>
@@ -29,7 +29,19 @@
         insert into user(name,username,password,email) values(#{name},#{username},#{password},#{email})
     </insert>
     <update id="update" parameterType="user">
-        update user set name=#{name}, password=#{password}, email=#{email} where id=#{id}
+        update user
+         <set>
+            <if test="name!=null">
+                name=#{name},
+            </if>
+            <if test="password!=null">
+                password=#{password},
+            </if>
+            <if test="email!=null">
+                email=#{email}
+            </if>
+         </set>
+         where id=#{id}
     </update>
 
     <delete id="delete" parameterType="int">

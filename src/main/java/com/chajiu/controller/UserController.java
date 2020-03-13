@@ -11,6 +11,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
@@ -29,14 +32,13 @@ public class UserController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ResponseBody
     public Response<String> login(@RequestBody User user, ModelMap map){
-
         Response<String> response=new Response<>();
-        boolean result=userService.check(user);     //检查用户名和密码
+        Boolean result=userService.check(user);     //检查用户名和密码
         if(result!=true){
             response.setCode(ResponseCodeType.ERROR_500);
             response.setMessage("账户不存在或密码错误");
         }else{
-            map.addAttribute("isLogin",true);
+            map.addAttribute("isLogin",result);
             User loggedUser=userService.findOne(user);
             loggedUser.setPassword("");     //不返回密码
             map.addAttribute("loggedUser",loggedUser);
@@ -76,9 +78,12 @@ public class UserController {
     @ResponseBody
     public Response<User> getLoggedInfo(ModelMap map){
         Response<User> response=new Response<>();
-        Boolean result=(Boolean)map.getAttribute("isLogin");    //获取isLogin属性
-        if(result!=null){   //已登录
+        Boolean result=(Boolean) map.getAttribute("isLogin");    //获取isLogin属性
+        if(result!=null && result==true){   //已登录
             User loggedUser=(User)map.getAttribute("loggedUser");
+
+            System.out.println(loggedUser);
+
             response.setData(loggedUser);
         }else{  //未登录
             response.setCode(ResponseCodeType.ERROR_500);
@@ -101,6 +106,24 @@ public class UserController {
         return response;
     }
 
+
+    /**
+     * 提交uid，和需要更改的部分即可
+     * @param user
+     * @return
+     */
+    @RequestMapping(value = "/update",method = RequestMethod.PUT)
+    @ResponseBody
+    public Response<String> update(@RequestBody User user){
+        Response<String> response=new Response<>();
+        try {
+            userService.update(user);
+        }catch (Exception e){
+            response.setCode(ResponseCodeType.ERROR_500);
+            response.setMessage("更新失败！");
+        }
+        return response;
+    }
 
 
 

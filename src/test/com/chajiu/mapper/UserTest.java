@@ -18,6 +18,8 @@ public class UserTest {
     @Autowired
     UserService service;
 
+    @Autowired
+    UserMapper mapper;
     @Test
     public void findAll(){
         System.out.println(service.findAll());
@@ -27,8 +29,11 @@ public class UserTest {
     @Test
     public void findOne(){
         User user=new User();
-        user.setName("zyy");
-        System.out.println(service.findOne(user));
+        user.setUsername("usernamezyy");
+        user.setPassword("1234");
+        System.out.println(mapper.findOne(user));
+
+        System.out.println(mapper.findOne(2));
     }
 
     @Test
@@ -48,10 +53,10 @@ public class UserTest {
 
     @Test
     public void update(){
-        User user=service.findOne(new User().id(1));
+        User user=service.findOne(new User().id(2));
         user.setName("zyy2");
         service.update(user);
-        System.out.println(service.findOne(new User().id(1)));
+        System.out.println(service.findOne(new User().id(2)));
     }
     @Test
     public void delete(){

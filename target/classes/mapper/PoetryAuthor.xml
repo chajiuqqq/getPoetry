@@ -15,6 +15,10 @@
         select * from poetry_author where id = #{id}
     </select>
 
+    <select id="findSimpleOne" parameterType="int" resultType="poetryAuthor">
+        select * from poetry_author where id = #{id}
+    </select>
+
     <select id="findAll" resultType="poetryAuthor">
         select * from  poetry_author pa where id in (select cid from poetry_category)
     </select>
