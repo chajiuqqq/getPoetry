@@ -7,48 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/FavourMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Favour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/FavourService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/FavourServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/mapper/FavourMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/PoetryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/PoetryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/PoetryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/PoetryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/PoetryAuthorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/PoetryAuthorMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/PoetryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/PoetryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/PoetryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/service/PoetryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/PoetryAuthor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/PoetryAuthor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/PoetryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/PoetryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/controller/PoetryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/controller/PoetryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/PoetryAuthorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/PoetryAuthorMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/PoetryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/PoetryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/service/Impl/PoetryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/service/PoetryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/service/PoetryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PoetryAuthor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PoetryAuthor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PoetryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PoetryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/js/categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/flower.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/flower.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/poem.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/poem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/search_poem.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/search_poem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/search_searchpoem.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/search_searchpoem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/sort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/static/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/page.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,12 +173,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat 7.0.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.64" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/MyPoetry_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="MyPoetry:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/MyPoetry_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -271,11 +247,11 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.PoetryTest.likeTitle" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
       <item itemvalue="JUnit.UserTest.findOne" />
       <item itemvalue="JUnit.FavourTest.findAll" />
       <item itemvalue="JUnit.FavourTest.exist" />
       <item itemvalue="JUnit.FavourTest.delete" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
     </list>
     <recent_temporary>
       <list>
@@ -310,6 +286,7 @@
       <workItem from="1583752633187" duration="3469000" />
       <workItem from="1583808237917" duration="5043000" />
       <workItem from="1583991596650" duration="21173000" />
+      <workItem from="1584090490845" duration="5012000" />
     </task>
     <servers />
   </component>

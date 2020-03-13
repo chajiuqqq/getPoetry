@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>sort</title>
-	<script src="node_modules/vue/dist/vue.js"></script>
-	<link rel="stylesheet" href="node_modules/element-ui/lib/theme-chalk/index.css">
-	<script src="node_modules/element-ui/lib/index.js"></script>
+	<script src="/node_modules/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="/node_modules/element-ui/lib/theme-chalk/index.css">
+	<script src="/node_modules/element-ui/lib/index.js"></script>
 	<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="/js/search.js"></script>
 <style>
 [v-cloak]{
 		display: none;
@@ -111,14 +111,14 @@ a:active{  text-decoration:none;}
 							  text-color="#fff"
 							  active-text-color="#F0EFE2"
 							  >
-							<img src="photo/1.png" style="float:left;margin-left:120px;margin-top:5px;width:60px;height:50px;">
+							<img src="/photo/1.png" style="float:left;margin-left:120px;margin-top:5px;width:60px;height:50px;">
 										
 								 	<el-menu-item index="1" >
-								  		<a href="view/main.html">{{text1}}</a>
+								  		<a href="/view/main.html">{{text1}}</a>
 						  			</el-menu-item>
 								 
 								  	<el-menu-item index="3" >
-								  		<a href="view/sort.html">{{text3}}</a>
+								  		<a href="/view/sort.html">{{text3}}</a>
 							  		</el-menu-item>
 								 
 								  	<el-menu-item index="5" style="float: right;margin-right: 170px" @click="jump">
@@ -140,7 +140,7 @@ a:active{  text-decoration:none;}
 							text3:'分类',
 							// text4:'社区',
 							text5:'登录',
-							url:'photo/head.png'
+							url:'/photo/head.png'
 					
 				}
 			},
@@ -168,9 +168,9 @@ a:active{  text-decoration:none;}
 				  jump(){
 				  	if(this.text5=="登录")
 				  	{
-						window.location.href='view/login.html' ;
+						window.location.href='/view/login.html' ;
 				  	}else{
-						window.location.href='view/usercenter.html' ;
+						window.location.href='/view/usercenter.html' ;
 				  	}
 				  }
 				},
@@ -262,7 +262,7 @@ a:active{  text-decoration:none;}
 			   
 				  },
 				  jumptopoem(e){
-					window.location.href='view/poem.html?titleid=' + e.target.getAttribute('titleid');
+					window.location.href='/view/poem.html?titleid=' + e.target.getAttribute('titleid');
 				}
 				},
 				mounted:function(){

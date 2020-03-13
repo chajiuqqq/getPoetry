@@ -44,7 +44,7 @@ Vue.component('common-search',{
 				        });
 					}else{
 					var encodename=encodeURI(this.input);
-					window.location.href='view/search_searchpoem.html?title='+encodename;
+					window.location.href='/view/search_searchpoem.html?title='+encodename;
 		}
 				},
 	    MouseOver(e){
@@ -86,7 +86,7 @@ Vue.component('common-search',{
 				},
 				getpoems(e){
 					console.log('youyouyou');
-					window.location.href='view/search_poem.html?id='+e.target.getAttribute('cid');
+					window.location.href='/view/search_poem.html?id='+e.target.getAttribute('cid');
 					
 				}
 			},

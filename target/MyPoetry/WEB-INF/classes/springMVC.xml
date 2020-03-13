@@ -17,5 +17,9 @@
     <context:component-scan base-package="com.chajiu.controller">
     </context:component-scan>
 
-<!--    <mvc:resources mapping="/mapper/**" location="classpath:static/**"></mvc:resources>-->
+    <mvc:resources mapping="/js/**" location="classpath:/static/js/"/>
+    <mvc:resources mapping="/view/**" location="classpath:/static/view/"/>
+    <mvc:resources mapping="/node_modules/**" location="classpath:/static/js/node_modules/"/>
+    <mvc:resources mapping="/photo/**" location="classpath:/static/photo/"/>
+
 </beans>

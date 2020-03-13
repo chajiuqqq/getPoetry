@@ -19,7 +19,7 @@
 			},
 			methods:{
 				toSortPage(e){
-					window.location.href='sort.html?bid='+e.currentTarget.getAttribute('buttonid');
+					window.location.href='/view/sort.html?bid='+e.currentTarget.getAttribute('buttonid');
 				},
 				jumppoem(){
 	

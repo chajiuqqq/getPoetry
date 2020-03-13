@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
-	<script src="node_modules/vue/dist/vue.js"></script>
-	<link rel="stylesheet" href="node_modules/element-ui/lib/theme-chalk/index.css">
-	<script src="node_modules/element-ui/lib/index.js"></script>
+	<script src="/node_modules/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="/node_modules/element-ui/lib/theme-chalk/index.css">
+	<script src="/node_modules/element-ui/lib/index.js"></script>
 	<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
 	<style>
 	[v-cloak]{
@@ -133,7 +133,7 @@ input:-ms-input-placeholder {
 			      	
 			      	if(response.data.code == 200){
 			      		this.open();
-			      		window.location.href='view/login.html';
+			      		window.location.href='/view/login.html';
 
 			      	}else{
 				  		this.fail();
