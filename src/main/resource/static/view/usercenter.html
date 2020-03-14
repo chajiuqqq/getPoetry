@@ -180,7 +180,7 @@ a:active{ color:white; text-decoration:none;}
 					      	
 					      	if(response.data.code == 200){
 					      		
-					      		window.location.href='//view/main.html';
+					      		window.location.href='/view/main.html';
 					      	}else{
 						  		
 					      	}
@@ -226,7 +226,7 @@ a:active{ color:white; text-decoration:none;}
 		margin-top:5px;width:60px;height:50px;">
 					
 		  <el-menu-item index="1" ><a href="/view/main.html">{{text1}}</a></el-menu-item>
-		  <el-menu-item index="2" ><a href="/view/totalpoem.html">{{text2}}</a></el-menu-item>
+		  <el-menu-item index="2" ><a href="/view/totalpoem.html">{{text3}}</a></el-menu-item>
 		  
 		  <el-menu-item index="5" style="float: right;margin-right: 170px" @click="jump">{{text5}}&nbsp;<span class="demo-basic--circle"><span class="block"><el-avatar :size="26" :src="url" style="margin-bottom: 8px"></el-avatar></span></span></el-menu-item>
 		</el-menu>
@@ -236,8 +236,8 @@ a:active{ color:white; text-decoration:none;}
 					return{
 						activeIndex2: '5',
 								text1:'首页',
-								text2:'诗文',
-								// text3:'分类',
+								// text2:'诗文',
+								text3:'分类',
 								// text4:'社区',
 								text5:'用户中心',
 								url:'/photo/head.png',

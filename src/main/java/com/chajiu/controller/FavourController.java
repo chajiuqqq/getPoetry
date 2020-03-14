@@ -20,7 +20,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/api")
-@SessionAttributes(value = {"isLogin","loggedUser"}) //把登录标志和已登录用户放入SessionScope
+//@SessionAttributes(value = {"isLogin","loggedUser"}) //把登录标志和已登录用户放入SessionScope
 public class FavourController {
     @Autowired
     FavourService service;
@@ -29,10 +29,10 @@ public class FavourController {
 
     User loggedUser;
 
-    @ModelAttribute
-    public void init(ModelMap map){
-        loggedUser=(User)map.getAttribute("loggedUser");
-    }
+//    @ModelAttribute
+//    public void init(ModelMap map){
+//        loggedUser=(User)map.getAttribute("loggedUser");
+//    }
 
     @RequestMapping(value = {"/favours","/favours/start/{start}/count/{count}"},method = RequestMethod.GET)
     @ResponseBody
