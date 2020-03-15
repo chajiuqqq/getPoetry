@@ -2,9 +2,7 @@ package com.chajiu.mapper;
 
 
 import com.chajiu.pojo.Favour;
-import com.chajiu.pojo.User;
 import com.chajiu.service.FavourService;
-import com.chajiu.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

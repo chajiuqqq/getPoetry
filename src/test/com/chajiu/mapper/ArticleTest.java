@@ -3,7 +3,6 @@ package com.chajiu.mapper;
 
 import com.chajiu.pojo.Article;
 import com.chajiu.service.ArticleService;
-import com.chajiu.service.CategoryService;
 import com.chajiu.util.Page;
 import org.junit.Test;
 import org.junit.runner.RunWith;

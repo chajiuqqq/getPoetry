@@ -7,11 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyPoetry.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/lib/com.spreada.utils.chinese.ZHConverter-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/ArticleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/CategoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/FavourTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryAuthorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryCategoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/UserTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +60,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="1YR2G7ZjYWpAWOCCR2x1p6b0Dkb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,7 +76,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -276,6 +301,9 @@
       <workItem from="1584090490845" duration="5611000" />
       <workItem from="1584105148389" duration="1311000" />
       <workItem from="1584181472555" duration="1525000" />
+      <workItem from="1584191250700" duration="2839000" />
+      <workItem from="1584235274466" duration="1330000" />
+      <workItem from="1584236650646" duration="2234000" />
     </task>
     <servers />
   </component>

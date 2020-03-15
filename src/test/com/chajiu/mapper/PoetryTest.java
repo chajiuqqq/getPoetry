@@ -2,7 +2,6 @@ package com.chajiu.mapper;
 
 
 import com.chajiu.pojo.Poetry;
-import com.chajiu.pojo.PoetryAuthor;
 import com.chajiu.service.PoetryService;
 import com.chajiu.util.Page;
 import org.junit.Test;

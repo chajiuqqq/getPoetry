@@ -1,9 +1,7 @@
 package com.chajiu.mapper;
 
 
-import com.chajiu.pojo.Category;
 import com.chajiu.pojo.User;
-import com.chajiu.service.CategoryService;
 import com.chajiu.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

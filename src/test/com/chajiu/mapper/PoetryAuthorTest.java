@@ -1,7 +1,6 @@
 package com.chajiu.mapper;
 
 
-import com.chajiu.service.CategoryService;
 import com.chajiu.service.PoetryAuthorService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
