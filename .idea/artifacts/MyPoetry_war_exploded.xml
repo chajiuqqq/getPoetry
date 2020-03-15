@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="MyPoetry:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/MyPoetry_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/MyPoetry</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>MyPoetry</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -28,8 +35,11 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.10" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.10" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
-          <element id="library" level="project" name="com.spreada.utils.chinese.ZHConverter-1.0" />
+          <element id="library" level="project" name="Maven: ZHConverter:ZHConverter:1.0" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/MyPoetry/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="MyPoetry/web/Web" />
     </root>

@@ -7,33 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyPoetry.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/lib/com.spreada.utils.chinese.ZHConverter-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/ArticleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/CategoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/FavourTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryAuthorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryCategoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/PoetryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/chajiu/mapper/UserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/util/LangConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/LangConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/util/LangConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/util/LangConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/util/LangConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/util/LangConverter.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource/lib/com.spreada.utils.chinese.ZHConverter-1.0.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.204" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -303,7 +282,7 @@
       <workItem from="1584181472555" duration="1525000" />
       <workItem from="1584191250700" duration="2839000" />
       <workItem from="1584235274466" duration="1330000" />
-      <workItem from="1584236650646" duration="2234000" />
+      <workItem from="1584236650646" duration="7752000" />
     </task>
     <servers />
   </component>

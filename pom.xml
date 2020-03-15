@@ -163,6 +163,13 @@
       <version>${servlet.version}</version>
     </dependency>
 
+<!--    简繁体转换包-->
+    <dependency>
+      <groupId>ZHConverter</groupId>
+      <artifactId>ZHConverter</artifactId>
+      <version>1.0</version>
+    </dependency>
+
   </dependencies>
 
   <build>
