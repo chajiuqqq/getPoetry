@@ -26,7 +26,7 @@ public class Favour {
 
     public void setPoetry(Poetry poetry) {
         this.poetry = poetry;
-        setPoetryId(poetry.getId());
+//        setPoetryId(poetry.getId());
     }
 
     public Integer getId() {

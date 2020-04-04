@@ -10,6 +10,6 @@ public interface FavourService {
     List<Favour> findAllByUserId(Integer uid);
     List<Favour> findAllByUserId(Integer uid,Page page);
     void save(Favour favour) throws Exception;
-    void delete(Favour favour);
+    void delete(Favour favour) throws Exception;
     Boolean exist(Favour favour);
 }

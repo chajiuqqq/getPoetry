@@ -28,6 +28,6 @@
     </delete>
 
     <select id="exist" parameterType="favour" resultType="int">
-        select count(*) from favour where id=#{id} AND user_id=#{userId};
+        select count(*) from favour where poetry_id=#{poetryId} AND user_id=#{userId};
     </select>
 </mapper>

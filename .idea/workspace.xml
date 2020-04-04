@@ -8,6 +8,18 @@
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ArticleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/ArticleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Favour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Favour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/ArticleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/FavourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/FavourService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/ArticleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/FavourServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/FavourServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/ArticleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/FavourMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/FavourMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoetryTest.likeTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FavourTest.findAllByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
         <pattern>
@@ -135,14 +147,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryTest" />
-      <option name="METHOD_NAME" value="likeTitle" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.FavourTest" />
+      <option name="METHOD_NAME" value="findAllByPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FavourTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
         <pattern>
@@ -151,8 +163,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.UserTest" />
-      <option name="METHOD_NAME" value="findOne" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.FavourTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,20 +244,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PoetryTest.likeTitle" />
-      <item itemvalue="JUnit.UserTest.findOne" />
       <item itemvalue="JUnit.FavourTest.findAll" />
       <item itemvalue="JUnit.FavourTest.exist" />
       <item itemvalue="JUnit.FavourTest.delete" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
+      <item itemvalue="JUnit.FavourTest.save" />
+      <item itemvalue="JUnit.FavourTest.findAllByPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FavourTest.findAllByPage" />
+        <item itemvalue="JUnit.FavourTest.save" />
         <item itemvalue="JUnit.FavourTest.delete" />
         <item itemvalue="JUnit.FavourTest.exist" />
-        <item itemvalue="JUnit.UserTest.findOne" />
         <item itemvalue="JUnit.FavourTest.findAll" />
-        <item itemvalue="JUnit.PoetryTest.likeTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +290,7 @@
       <workItem from="1584191250700" duration="2839000" />
       <workItem from="1584235274466" duration="1330000" />
       <workItem from="1584236650646" duration="8389000" />
-      <workItem from="1585984280290" duration="262000" />
+      <workItem from="1585984280290" duration="4420000" />
     </task>
     <servers />
   </component>
