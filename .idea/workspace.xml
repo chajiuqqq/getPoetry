@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/util/LangConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/LangConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/util/LangConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyPoetry/WEB-INF/classes/com/chajiu/util/LangConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chajiu/util/LangConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chajiu/util/LangConverter.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -282,7 +277,8 @@
       <workItem from="1584181472555" duration="1525000" />
       <workItem from="1584191250700" duration="2839000" />
       <workItem from="1584235274466" duration="1330000" />
-      <workItem from="1584236650646" duration="7752000" />
+      <workItem from="1584236650646" duration="8389000" />
+      <workItem from="1585984280290" duration="262000" />
     </task>
     <servers />
   </component>
