@@ -11,9 +11,9 @@ public class SearchResult {
     @Override
     public String toString() {
         return "SearchResult{" +
-                "categories=" + categories +
-                ", poetries=" + poetries +
-                ", authors=" + authors +
+                "\n\tcategories=" + categories +
+                "\n\tpoetries=" + poetries +
+                "\n\tauthors=" + authors +
                 '}';
     }
 

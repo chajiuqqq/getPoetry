@@ -9,6 +9,7 @@ public class PoetryAuthor {
     private String name;
     private String intro;
     private String dynasty;
+    private Integer record;
 
     private List<Poetry> poetries;
 
@@ -19,7 +20,16 @@ public class PoetryAuthor {
                 ", name='" + name + '\'' +
                 ", intro='" + intro + '\'' +
                 ", dynasty='" + dynasty + '\'' +
+                ", record=" + record +
                 '}';
+    }
+
+    public Integer getRecord() {
+        return record;
+    }
+
+    public void setRecord(Integer record) {
+        this.record = record;
     }
 
     public List<Poetry> getPoetries() {
@@ -64,7 +74,8 @@ public class PoetryAuthor {
 
     public PoetryAuthor toSimpleInstance(){
         name= LangConverter.toSimple(name);
-        intro=LangConverter.toSimple(intro);
+        if(intro!=null)
+            intro=LangConverter.toSimple(intro);
         return this;
     }
 }

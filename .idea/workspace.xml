@@ -7,13 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SearchResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SearchResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" afterDir="false" />
@@ -86,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PoetryAuthorTest.findLikeName">
+  <component name="RunManager" selected="JUnit.SearchTest.searchTest">
     <configuration name="FavourTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
@@ -98,22 +99,6 @@
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.FavourTest" />
       <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FavourTest.exist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyPoetry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chajiu.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.FavourTest" />
-      <option name="METHOD_NAME" value="exist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,6 +147,22 @@
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryAuthorTest" />
       <option name="METHOD_NAME" value="findLikeName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.searchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyPoetry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chajiu.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.SearchTest" />
+      <option name="METHOD_NAME" value="searchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -241,23 +242,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FavourTest.exist" />
       <item itemvalue="JUnit.FavourTest.delete" />
       <item itemvalue="JUnit.FavourTest.save" />
       <item itemvalue="JUnit.FavourTest.findAllByPage" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
-<<<<<<< Updated upstream
-=======
       <item itemvalue="JUnit.PoetryAuthorTest.findLikeName" />
->>>>>>> Stashed changes
+      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
+      <item itemvalue="JUnit.SearchTest.searchTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchTest.searchTest" />
         <item itemvalue="JUnit.PoetryAuthorTest.findLikeName" />
         <item itemvalue="JUnit.FavourTest.findAllByPage" />
         <item itemvalue="JUnit.FavourTest.save" />
         <item itemvalue="JUnit.FavourTest.delete" />
-        <item itemvalue="JUnit.FavourTest.exist" />
       </list>
     </recent_temporary>
   </component>

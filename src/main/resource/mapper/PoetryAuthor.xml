@@ -9,6 +9,7 @@
         <result property="name" column="name"/>
         <result property="intro" column="intro"/>
         <result property="dynasty" column="dynasty"/>
+        <result property="record" column="record"/>
         <collection property="poetries" ofType="poetry" column="id" select="com.chajiu.mapper.PoetryMapper.findByAuthorId"/>
     </resultMap>
     <select id="findOne" parameterType="int" resultMap="authorBean">
@@ -25,6 +26,14 @@
     
     <select id="findLikeName" resultType="poetryAuthor">
         <bind name="_name" value="'%'+name+'%'"/>
-        select id,name from poetry_author where name like #{_name};
+        select id,name from poetry_author where name like #{_name} order by record desc;
     </select>
+
+    <select id="findRecordCount" resultType="poetryAuthor">
+       select p.author_id as id, count(pc.pid) as record from poetry_category pc left join poetry p on pc.pid=p.id group by p.author_id
+    </select>
+
+    <update id="update" parameterType="poetryAuthor">
+        update poetry_author set record=#{record} where id=#{id}
+    </update>
 </mapper>

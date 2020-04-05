@@ -1,6 +1,7 @@
 package com.chajiu.service.Impl;
 
 import com.chajiu.mapper.PoetryAuthorMapper;
+import com.chajiu.pojo.Poetry;
 import com.chajiu.pojo.PoetryAuthor;
 import com.chajiu.service.PoetryAuthorService;
 import com.chajiu.util.LangConverter;
@@ -33,6 +34,14 @@ public class PoetryAuthorServiceImpl implements PoetryAuthorService {
     @Override
     public List<PoetryAuthor> findLikeName(String name) {
         return mapper.findLikeName(name);
+    }
+
+    @Override
+    public void createRecord() {
+        List<PoetryAuthor> authors = mapper.findRecordCount();
+        for(PoetryAuthor author:authors){
+            mapper.update(author);
+        }
     }
 
 }

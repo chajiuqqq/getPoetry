@@ -2,7 +2,9 @@ package com.chajiu.mapper;
 
 
 import com.chajiu.pojo.PoetryAuthor;
+import com.chajiu.pojo.SearchResult;
 import com.chajiu.service.PoetryAuthorService;
+import com.chajiu.service.SearchService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,32 +15,14 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
-public class PoetryAuthorTest {
+public class SearchTest {
 
     @Autowired
-    PoetryAuthorService service;
-
-
-
+    SearchService searchService;
 
     @Test
-    public void findOne(){
-        System.out.println(service.findOne(13));
+    public void searchTest(){
+        SearchResult search = searchService.search("爱");
+        System.out.println(search);
     }
-
-
-    @Test
-    public void findLikeName(){
-        String name="李";
-        List<PoetryAuthor> authors = service.findLikeName(name);
-        for(PoetryAuthor author:authors){
-            System.out.println(author);
-        }
-    }
-
-    @Test
-    public void addRecord(){
-        service.createRecord();
-    }
-
 }

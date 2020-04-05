@@ -27,5 +27,24 @@ public interface PoetryAuthorMapper {
      */
     List<PoetryAuthor> findAll();
 
+    /**
+     * 模糊查找作者，结果依据record降序排序
+     * @param name
+     * @return
+     */
     List<PoetryAuthor> findLikeName(@Param("name") String name);
+
+    /**
+     * 更新作者信息
+     * @param author
+     */
+    void update(PoetryAuthor author);
+
+    /**
+     * 读取每个作者在分类中拥有的诗词数
+     * @return
+     */
+    List<PoetryAuthor> findRecordCount();
+
+
 }
