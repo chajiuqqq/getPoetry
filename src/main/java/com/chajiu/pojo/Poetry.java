@@ -109,9 +109,12 @@ public class Poetry {
     }
 
     public Poetry toSimpleInstance(){
-        title= LangConverter.toSimple(title);
-        content=LangConverter.toSimple(content);
-        author=LangConverter.toSimple(author);
+        if(title!=null)
+            title= LangConverter.toSimple(title);
+        if(content!=null)
+            content=LangConverter.toSimple(content);
+        if(author!=null)
+            author=LangConverter.toSimple(author);
         if(poetryAuthor!=null)
             poetryAuthor=poetryAuthor.toSimpleInstance();
         return this;

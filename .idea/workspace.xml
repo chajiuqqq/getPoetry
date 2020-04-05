@@ -7,17 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Poetry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Poetry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SearchService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest.searchTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.64">
     <configuration name="FavourTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">

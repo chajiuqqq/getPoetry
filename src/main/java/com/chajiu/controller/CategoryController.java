@@ -59,25 +59,6 @@ public class CategoryController {
 
 
     /**
-     * 模糊查询分类
-     * @return
-     */
-    @RequestMapping(value = "/category/name/{name}",method = RequestMethod.GET)
-    @ResponseBody
-    public Response<List<Category>> findPossibleCategory(@PathVariable String name){
-        Response<List<Category>> response=new Response<>();
-        try {
-            List<Category> categoryList = service.findPossibleCategory(name);
-            response.setData(categoryList);
-        }catch (Exception e){
-            response.setCode(ResponseCodeType.ERROR_500);
-            response.setMessage(e.getMessage());
-        }
-        return response;
-    }
-
-
-    /**
      * 删除分类
      * @param id
      * @return

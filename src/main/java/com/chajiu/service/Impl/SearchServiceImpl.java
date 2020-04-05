@@ -24,11 +24,14 @@ public class SearchServiceImpl implements SearchService {
     PoetryAuthorService authorService;
 
     @Override
-    public SearchResult search(String in) {
+    public SearchResult search(String in) throws Exception {
         return search(in,3);
     }
 
-    public SearchResult search(String in,int maxShowCount) {
+    public SearchResult search(String in,int maxShowCount) throws Exception {
+        if(in.length()>250)
+            throw new Exception("搜索内容过长");
+
         List<Category> categories = categoryService.findPossibleCategory(in);
         categories=categories.subList(0,Integer.min(maxShowCount,categories.size()));   //取前三个结果
 
@@ -40,6 +43,9 @@ public class SearchServiceImpl implements SearchService {
 
         //简化
         for(Poetry poetry:poetries){
+            poetry.setContent(null);
+            poetry.setYunlvRule(null);
+            poetry.setPoetryAuthor(null);
             poetry.toSimpleInstance();
         }
         for(PoetryAuthor author:authors){
