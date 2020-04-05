@@ -7,19 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ArticleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/ArticleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Favour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Favour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/ArticleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/FavourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/FavourService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/ArticleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/FavourServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/FavourServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/ArticleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/FavourMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/FavourMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/ArticleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/FavourTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/PoetryAuthorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/PoetryAuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/PoetryAuthor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/PoetryAuthorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.64">
+  <component name="RunManager" selected="JUnit.PoetryAuthorTest.findLikeName">
     <configuration name="FavourTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
@@ -122,22 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FavourTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyPoetry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chajiu.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.FavourTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FavourTest.findAllByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
@@ -165,6 +146,22 @@
       <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.FavourTest" />
       <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoetryAuthorTest.findLikeName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyPoetry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chajiu.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chajiu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.chajiu.mapper.PoetryAuthorTest" />
+      <option name="METHOD_NAME" value="findLikeName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -244,20 +241,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FavourTest.findAll" />
       <item itemvalue="JUnit.FavourTest.exist" />
       <item itemvalue="JUnit.FavourTest.delete" />
       <item itemvalue="JUnit.FavourTest.save" />
       <item itemvalue="JUnit.FavourTest.findAllByPage" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
+<<<<<<< Updated upstream
+=======
+      <item itemvalue="JUnit.PoetryAuthorTest.findLikeName" />
+>>>>>>> Stashed changes
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PoetryAuthorTest.findLikeName" />
         <item itemvalue="JUnit.FavourTest.findAllByPage" />
         <item itemvalue="JUnit.FavourTest.save" />
         <item itemvalue="JUnit.FavourTest.delete" />
         <item itemvalue="JUnit.FavourTest.exist" />
-        <item itemvalue="JUnit.FavourTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -291,6 +291,7 @@
       <workItem from="1584235274466" duration="1330000" />
       <workItem from="1584236650646" duration="8389000" />
       <workItem from="1585984280290" duration="4420000" />
+      <workItem from="1586062493889" duration="1546000" />
     </task>
     <servers />
   </component>

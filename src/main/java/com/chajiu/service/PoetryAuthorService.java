@@ -7,4 +7,5 @@ import java.util.List;
 public interface PoetryAuthorService {
     PoetryAuthor findOne(Integer id);
     List<PoetryAuthor> findAll();
+    List<PoetryAuthor> findLikeName(String name);
 }

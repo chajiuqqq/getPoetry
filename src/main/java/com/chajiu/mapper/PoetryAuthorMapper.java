@@ -1,6 +1,7 @@
 package com.chajiu.mapper;
 
 import com.chajiu.pojo.PoetryAuthor;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -21,8 +22,10 @@ public interface PoetryAuthorMapper {
     PoetryAuthor findSimpleOne(Integer id);
 
     /**
-     * 查找所有author，不包含诗词
+     * 查找诗词有分类记录的author，不包含诗词
      * @return
      */
     List<PoetryAuthor> findAll();
+
+    List<PoetryAuthor> findLikeName(@Param("name") String name);
 }

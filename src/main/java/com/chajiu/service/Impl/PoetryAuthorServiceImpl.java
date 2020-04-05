@@ -30,4 +30,9 @@ public class PoetryAuthorServiceImpl implements PoetryAuthorService {
         return authors;
     }
 
+    @Override
+    public List<PoetryAuthor> findLikeName(String name) {
+        return mapper.findLikeName(name);
+    }
+
 }

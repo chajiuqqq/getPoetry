@@ -22,4 +22,9 @@
     <select id="findAll" resultType="poetryAuthor">
         select * from  poetry_author pa where id in (select cid from poetry_category)
     </select>
+    
+    <select id="findLikeName" resultType="poetryAuthor">
+        <bind name="_name" value="'%'+name+'%'"/>
+        select id,name from poetry_author where name like #{_name};
+    </select>
 </mapper>
