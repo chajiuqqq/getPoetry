@@ -21,7 +21,7 @@ public class SearchTest {
     SearchService searchService;
 
     @Test
-    public void searchTest(){
+    public void searchTest() throws Exception {
         SearchResult search = searchService.search("爱");
         System.out.println(search);
     }

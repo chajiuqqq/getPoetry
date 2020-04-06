@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/api")
@@ -95,22 +97,18 @@ public class FavourController {
      */
     @RequestMapping(value = "/favour/poetry/{pid}",method = RequestMethod.GET)
     @ResponseBody
-    public Response<Boolean> exist(@PathVariable Integer pid){
-        Response<Boolean> response=new Response<>();
-
-        Poetry poetry=new Poetry();
-        poetry.setId(pid);
-        poetry = poetryService.findOne(poetry);
-
-        Favour favour=new Favour();
-        favour.setUserId(loggedUser.getId());
-        favour.setPoetry(poetry);
-        favour.setCreateDate(new Date());
+    public Response<Map<String,Boolean>> exist(@PathVariable Integer pid){
+        Response<Map<String,Boolean>> response=new Response<>();
 
         try {
+            Favour favour=new Favour();
+            favour.setUserId(loggedUser.getId());
+            favour.setPoetryId(pid);
+
             Boolean result = service.exist(favour);
-            response.setData(result);
-            response.setMessage(result?"已收藏":"未收藏");
+            Map<String,Boolean> map=new HashMap<>();
+            map.put("hasFavour",result);
+            response.setData(map);
         }catch (NullPointerException e){
             response.setCode(ResponseCodeType.ERROR_500);
             response.setMessage("用户未登录");

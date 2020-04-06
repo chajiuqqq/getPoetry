@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Poetry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Poetry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SearchTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -241,8 +238,8 @@
       <item itemvalue="JUnit.FavourTest.save" />
       <item itemvalue="JUnit.FavourTest.findAllByPage" />
       <item itemvalue="JUnit.PoetryAuthorTest.findLikeName" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
       <item itemvalue="JUnit.SearchTest.searchTest" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
     </list>
     <recent_temporary>
       <list>
@@ -285,6 +282,7 @@
       <workItem from="1584236650646" duration="8389000" />
       <workItem from="1585984280290" duration="4420000" />
       <workItem from="1586062493889" duration="1546000" />
+      <workItem from="1586150676199" duration="1666000" />
     </task>
     <servers />
   </component>

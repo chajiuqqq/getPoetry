@@ -28,6 +28,7 @@
     <fastjson.version>1.2.62</fastjson.version>
     <jackson.version>2.9.10.3</jackson.version>
     <servlet.version>4.0.1</servlet.version>
+    <QRCode.version>3.3.0</QRCode.version>
   </properties>
 
   <dependencies>
@@ -168,6 +169,13 @@
       <groupId>ZHConverter</groupId>
       <artifactId>ZHConverter</artifactId>
       <version>1.0</version>
+    </dependency>
+
+<!--    QRCode-->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>javase</artifactId>
+      <version>${QRCode.version}</version>
     </dependency>
 
   </dependencies>
