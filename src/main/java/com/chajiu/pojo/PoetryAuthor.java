@@ -76,6 +76,7 @@ public class PoetryAuthor {
         name= LangConverter.toSimple(name);
         if(intro!=null)
             intro=LangConverter.toSimple(intro);
+
         return this;
     }
 }

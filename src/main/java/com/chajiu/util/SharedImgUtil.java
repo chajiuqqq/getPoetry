@@ -6,7 +6,6 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
-import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -19,8 +18,9 @@ import java.util.List;
 
 public class SharedImgUtil {
 
-    public static String makeImg(Poetry poetry, String url,String bg) throws Exception {
-        File file=new File(bg);
+    public static String makeImg(Poetry poetry, String url,String classpath) throws Exception {
+
+        File file=new File(classpath+"static/photo/shareImg.png");
         BufferedImage image = ImageIO.read(file);
         Graphics2D graphics = image.createGraphics();
 
@@ -89,10 +89,12 @@ public class SharedImgUtil {
 
         //保存图片
         Random rand=new Random();
-        String out = "D://"+rand.nextInt(999999)+".png";
-        ImageIO.write(image,"PNG",new File(out));
+        String imgName=rand.nextInt(999999)+".png"; //文件名
+        File path = new File(classpath+"static/photo/sharedImg/"+imgName); //文件路径
+        path.getParentFile().mkdirs();
+        ImageIO.write(image,"PNG",path);    //写入img
 
-        return out;
+        return imgName;
 
     }
 

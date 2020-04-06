@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/SharedImgUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ShareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_spreada_utils_chinese_ZHConverter_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/PoetryAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/PoetryAuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/util/SharedImgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/SharedImgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/lib/com.spreada.utils.chinese.ZHConverter-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource/lib/com.spreada.utils.chinese.ZHConverter-1.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/MyPoetry" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.204" />
@@ -80,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SharedImgTest.run">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.64">
     <configuration name="FavourTest.findAllByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyPoetry" />
       <extension name="coverage">
@@ -239,8 +244,8 @@
       <item itemvalue="JUnit.FavourTest.findAllByPage" />
       <item itemvalue="JUnit.PoetryAuthorTest.findLikeName" />
       <item itemvalue="JUnit.SearchTest.searchTest" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
       <item itemvalue="JUnit.SharedImgTest.run" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.64" />
     </list>
     <recent_temporary>
       <list>
@@ -284,7 +289,8 @@
       <workItem from="1585984280290" duration="4420000" />
       <workItem from="1586062493889" duration="1546000" />
       <workItem from="1586150676199" duration="1666000" />
-      <workItem from="1586159062124" duration="6714000" />
+      <workItem from="1586159062124" duration="13545000" />
+      <workItem from="1586174362299" duration="472000" />
     </task>
     <servers />
   </component>

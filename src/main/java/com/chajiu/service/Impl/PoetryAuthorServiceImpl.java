@@ -18,7 +18,13 @@ public class PoetryAuthorServiceImpl implements PoetryAuthorService {
 
     @Override
     public PoetryAuthor findOne(Integer id) {
-       return mapper.findOne(id).toSimpleInstance();
+        PoetryAuthor author = mapper.findOne(id).toSimpleInstance();
+        List<Poetry> poetries = author.getPoetries();
+        if(poetries!=null){
+            for(Poetry poetry:poetries)
+                poetry.toSimpleInstance();
+        }
+        return author;
 
     }
 
