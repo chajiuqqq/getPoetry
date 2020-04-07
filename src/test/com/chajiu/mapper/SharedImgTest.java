@@ -2,7 +2,9 @@ package com.chajiu.mapper;
 
 
 import com.chajiu.pojo.Poetry;
+import com.chajiu.pojo.SharedImg;
 import com.chajiu.service.PoetryService;
+import com.chajiu.service.SharedImgService;
 import com.chajiu.util.SharedImgUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,6 +17,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class SharedImgTest {
     @Autowired
     PoetryService service;
+    @Autowired
+    SharedImgService sharedImgService;
 
     @Test
     public void run() throws Exception {
@@ -24,5 +28,29 @@ public class SharedImgTest {
         String img = SharedImgUtil.makeImg(one, "http://poetry.chajiuqqq.cn", "E:/project/MyPoetry/target/MyPoetry/WEB-INF/classes/");
         System.out.println(img);
     }
+
+    @Test
+    public void save(){
+        SharedImg img=new SharedImg(94,"12345.png");
+        sharedImgService.save(img);
+    }
+
+    @Test
+    public void find(){
+        SharedImg img = sharedImgService.find(95);
+        if(img==null)
+            System.out.println("dd");
+        else
+            System.out.println("gg");
+    }
+    @Test
+    public void del(){
+        SharedImg img = sharedImgService.find(38083);
+        if(img!=null)
+            sharedImgService.delete(img);
+
+    }
+
+
 
 }
