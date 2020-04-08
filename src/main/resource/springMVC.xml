@@ -19,7 +19,6 @@
 
     <mvc:resources mapping="/js/**" location="classpath:/static/js/"/>
     <mvc:resources mapping="/view/**" location="classpath:/static/view/"/>
-    <mvc:resources mapping="/node_modules/**" location="classpath:/static/js/node_modules/"/>
     <mvc:resources mapping="/photo/**" location="classpath:/static/photo/"/>
     <mvc:resources mapping="/share/**" location="classpath:/static/photo/sharedImg"/>
 
