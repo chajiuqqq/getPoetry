@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 	<title>Login</title>
 	<script src="/js/node_modules/vue/dist/vue.js"></script>
 	<link rel="stylesheet" href="/js/node_modules/element-ui/lib/theme-chalk/index.css">
 	<script src="/js/node_modules/element-ui/lib/index.js"></script>
 	<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+	<script type="text/javascript" src="/js/navigator.js"></script>
 	<style>
+		html{font-size:62.5%;}
+body {font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem; } 
+img { width:100%; -ms-interpolation-mode: bicubic;} 
 	[v-cloak]{
 		display: none;
 	}
@@ -41,12 +45,16 @@ input:-ms-input-placeholder {
 	margin-top: 13px;
 	margin-left: 10%
 }
-
+a{  text-decoration:none;}
+a:hover{  text-decoration:none;}
+a:active{  text-decoration:none;}
 	</style>
 
 </head>
 <body style="background-color: #E1E0C7">
 	<div id="container" class="container">
+
+	<common-navigator active=5></common-navigator>
 	<div class="middle">
 		<div style="margin-top: 100px;margin-left: 32%">
 		<el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign" >
@@ -86,10 +94,10 @@ input:-ms-input-placeholder {
 				},
 			methods:{
 				 open() {
-			        this.$message('恭喜，注册成功');
+			        alert('注册成功,请重新登录');
 			      },
-			      fail() {
-			        this.$alert('注册失败', '抱歉', {
+			      fail(msg) {
+			        this.$alert('注册失败,'+ msg, '抱歉', {
 			          confirmButtonText: '确定',
 			          callback: action => {
 			            this.$message({
@@ -122,7 +130,7 @@ input:-ms-input-placeholder {
 
 				}else{
 			    axios
-			      .post('http://rap2.taobao.org:38080/app/mock/245255/api/user/register',{
+			      .post('/api/user/register',{
 			      	 name:this.formLabelAlign.name,
 			      	 username:this.formLabelAlign.username,
 			      	 password:this.formLabelAlign.password,
@@ -136,7 +144,7 @@ input:-ms-input-placeholder {
 			      		window.location.href='login.html';
 
 			      	}else{
-				  		this.fail();
+				  		this.fail(response.data.message);
 			      	}
 					
 			      })

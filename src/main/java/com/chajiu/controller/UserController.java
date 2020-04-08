@@ -18,7 +18,6 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/api/user")
-//@SessionAttributes(value = {"isLogin","loggedUser"}) //把登录标志和已登录用户放入SessionScope
 public class UserController {
     @Autowired
     UserService userService;
@@ -81,9 +80,6 @@ public class UserController {
         Boolean result=(Boolean) session.getAttribute("isLogin");    //获取isLogin属性
         if(result!=null && result==true){   //已登录
             User loggedUser=(User)session.getAttribute("loggedUser");
-
-            System.out.println(loggedUser);
-
             response.setData(loggedUser);
         }else{  //未登录
             response.setCode(ResponseCodeType.ERROR_500);

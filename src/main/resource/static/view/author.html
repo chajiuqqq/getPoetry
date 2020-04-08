@@ -40,20 +40,15 @@ img { width:100%; -ms-interpolation-mode: bicubic;}
 	margin-right:10%;
 }
 .smallkuang{
-	display:inline-block;
-	width:15%;
-	height: 5rem;
 	border: #C8C7BC solid 0.15rem;
 	border-radius: 1.5rem;
 	box-shadow: 0 0.2rem 1.2rem 0 rgba(0, 0, 0, 0.1);
 	margin-top: 2rem;
-	margin-right: 74.5%;
-	padding-top:1rem;
+	padding: 10px;
 	font-size:3rem;
 	font-weight:bolder;
 	font-family:NSimSun;
 	color:#19537D;
-	text-align:center;
 }
 
 .left{ width:30%; float:left} 
@@ -180,12 +175,11 @@ a:active{  text-decoration:none;}
 
 		 Vue.component('kuang3-component',{
 			template:`
-			<div>
-			<table>
+			<div v-if="poetries">
+			<table style="width:100%;text-align:center;">
 				<tr>
 					<td>
-					<div class="smallkuang">
-					<span>{{name}}</span>【{{Dynasty}}】</div>
+						<span class="smallkuang">{{name}}【{{Dynasty}}】</span>
 					</td>
 				</tr>
 				<tr>

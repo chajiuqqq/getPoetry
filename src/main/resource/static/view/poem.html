@@ -158,7 +158,7 @@ table{
 
 			Vue.component('kuang1-component',{
 			template:`
-			<div class="poemkuang">
+			<div class="poemkuang" v-if="poetries">
 
 			 <div style="margin:3rem auto;text-align:center">
 						  <div style="text-align:center;color:#19537D;font-size:x-large;font-weight:bolder;">
@@ -169,7 +169,7 @@ table{
 							<div style="text-align:center;line-height:2.5rem" v-for="item in shortcontent">
 								{{item}} 
 							</div>		
-							</div>             
+			</div>             
 	             
 					
 			<div style="float:right;margin-top:0.5rem;margin-right:23rem"><i class="el-icon-star-off
@@ -201,7 +201,7 @@ table{
 					poetries:null,
 					categories:null,
 					tag:'tag：',
-					message:''
+					message:"-加入收藏"
 				}
 			},
 			methods:{
@@ -220,9 +220,6 @@ table{
 					      { 
 					      	if(response.data.code==200)
 					      	{
-					      		console.log('进入response');
-						        console.log(response);
-						      	// this.$refs.seachinput.value=response.data.data.name;
 						      	this.poetries = response.data.data;
 						      	this.title=this.poetries.title;
 						      	this.author=this.poetries.author;
@@ -259,7 +256,10 @@ table{
 					      		this.message = "-已收藏";						      	
 					       	}
 					       	else{
-					       		this.fail();
+					       		var msg="";
+					       		if(response.data.message=="用户未登录")
+					       			msg="请先登录";
+					       		this.fail(msg);
 					       	}
 					      })
 					      .catch(function (error) { // 请求失败处理
@@ -268,7 +268,7 @@ table{
 					}else{
 						axios({
 						 	 method: 'delete',
-							  url: '/api/favours/poetry/'+this.selectedId,
+							  url: '/api/favour/poetry/'+this.selectedId,
 							 })
 					    .then(response =>
 					      { 
@@ -292,8 +292,8 @@ table{
 				open() {
 			        this.$message('恭喜，收藏成功');
 			      },
-			      fail() {
-			        this.$alert('收藏失败', '抱歉', {
+			      fail(msg) {
+			        this.$alert('收藏失败 '+ msg, '抱歉', {
 			          confirmButtonText: '确定',
 			          callback: action => {
 			            this.$message({
@@ -353,7 +353,7 @@ table{
 
 Vue.component('kuang2-component',{
 			template:`
-			<div class="poemkuang">
+			<div class="poemkuang" v-if="name">
 				 <div style="text-align:left;font-size:larger;margin-left:4.3rem;margin-top:2rem">{{name}}</div>
 			  <div style="text-align:left;font-family:NSimSun;margin-left:4.3rem;
 			  margin-right:4.2rem;margin-top:1.5rem;line-height:2rem">{{intro}}</div>
@@ -367,16 +367,14 @@ Vue.component('kuang2-component',{
 				return{
 					name:null,
 					intro:null,
-					shortcontent:null,
-					
-					poetries:null,
+					poetry:null,
 					
 				}
 			},
 			methods:{
 				jumppoem(){
 				   	const url=new URLSearchParams(window.location.search);
-				   	console.log(url.has('titleid'));
+				 
 				   	if(url.has('titleid')==true)
 				   	{
 				   		console.log('进入jumppoem');
@@ -390,21 +388,9 @@ Vue.component('kuang2-component',{
 					      { 
 					      	if(response.data.code==200)
 					      	{
-					      		console.log('进入response');
-						        console.log(response);
-						      	// this.$refs.seachinput.value=response.data.data.name;
-						      	this.poetries = response.data.data;
-						      	this.name=this.poetries.poetryAuthor.name;
-						      	this.intro=this.poetries.poetryAuthor.intro;
-						      	if(this.poetries.dynasty=="T")
-						      	{
-						      		this.Dynasty="唐";
-						      	}else {
-						      		this.Dynasty="宋";
-						      	}
-						        this.shortcontent=this.poetries.content.split('|');
-
-						      	
+						      	this.poetry = response.data.data;
+						      	this.name=this.poetry.poetryAuthor.name;
+						      	this.intro=this.poetry.poetryAuthor.intro;
 					       	}
 					      })
 					      .catch(function (error) { // 请求失败处理

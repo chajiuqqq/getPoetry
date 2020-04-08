@@ -206,49 +206,46 @@ a:active{ color:white; text-decoration:none;}
 		
 		Vue.component('kuang2-component',{
 			template:`
-			<div class="bottom" style="display:inline-block">
-			<div style="float:right;margin-top:1.5rem;margin-right:10rem"><i class="el-icon-star-off
-				">&nbsp;<el-link type="primary" style="color:#19537D;font-weight:bold" @click="starpoem($event)">
-				{{message}}</el-link></i>
-			</div>
-			<div style="float:right;margin-top:1.5rem;margin-right:5rem"><i class="el-icon-picture-outline">&nbsp;<el-link type="primary" style="color:#19537D;font-weight:bold"
-				:titleid=poetries[i].id @click="share($event)">-生成图片分享</el-link></i></div>
+			<div class="bottom" style="display:inline-block" >
+					<div style="float:right;margin-top:1.5rem;margin-right:10rem"><i class="el-icon-star-off
+						">&nbsp;<el-link type="primary" style="color:#19537D;font-weight:bold" @click="starpoem($event)">
+						{{message}}</el-link></i>
+					</div>
+					<div style="float:right;margin-top:1.5rem;margin-right:5rem"><i class="el-icon-picture-outline">&nbsp;<el-link type="primary" style="color:#19537D;font-weight:bold"
+						:titleid=poetries[i].id @click="share($event)">-生成图片分享</el-link></i>
+					</div>
 
 
-			 <table style="margin-left:10rem;margin-top:4rem;text-align:center">
-	             <tr>
-					 <td style="width:30rem"><img src="/photo/left.png" style="width:5rem;cursor:pointer" @click="leftjump" /></td>
-					  <td style="width:39rem">
-						  <div>
-						  <div style="text-align:center;color:#19537D;font-size:x-large;font-weight:bolder;cursor:pointer;"  :titleid=poetries[i].id
-						  @click="jumptopoem($event)">
-							  {{poetries[i].title}}</div>
-							<br />
-							<div style="text-align:center;color:grey;">【作者】<span>{{poetries[i].author}}</span>【朝代】<span>{{Dynasty}}</span></div>
-							<br />
-							<div style="text-align:center;line-height:2.5rem" v-for="item in shortcontent">
-								{{item}} 
-							</div>		
-							</div>
-						</td>
-						<td style="width:30rem"><img src="/photo/right.png" style="width:5rem;cursor:pointer" @click="rightjump"/></td>
-	             </tr>
-	             <tr>
-					<td><div style="height:2rem;"></div></td>
-	             </tr>
-	             <tr >
-		            <td style="text-align:left;font-size:large;color:#19537D;columnSpan = '3';
-		           "><i class="el-icon-collection-tag"></i>{{tag}}<el-button size="mini" round v-for="item in categories"  style="color:#19537D">{{item.name}}</el-button>
-					 </td>
-	             </tr>
-	             <tr>
-	             <td><div style="height:1rem"></div></td>
-	             </tr>
-			 </table>
-
-
-
-
+					 <table style="margin-left:10rem;margin-top:4rem;text-align:center" v-if="poetries">
+			             <tr>
+							 <td style="width:30rem"><img src="/photo/left.png" style="width:5rem;cursor:pointer" @click="leftjump" /></td>
+							  <td style="width:39rem">
+								  <div>
+										  <div style="text-align:center;color:#19537D;font-size:x-large;font-weight:bolder;cursor:pointer;"  :titleid=poetries[i].id
+										  @click="jumptopoem($event)">
+											  {{poetries[i].title}}</div>
+											<br />
+											<div style="text-align:center;color:grey;">【作者】<span>{{poetries[i].author}}</span>【朝代】<span>{{poetries[i].dynasty}}</span></div>
+											<br />
+											<div style="text-align:center;line-height:2.5rem" v-for="item in poetries[i].content">
+												{{item}} 
+											</div>		
+									</div>
+								</td>
+							<td style="width:30rem"><img src="/photo/right.png" style="width:5rem;cursor:pointer" @click="rightjump"/></td>
+			             </tr>
+			             <tr>
+							<td><div style="height:2rem;"></div></td>
+			             </tr>
+			             <tr >
+				            <td style="text-align:left;font-size:large;color:#19537D;columnSpan = '3';
+				           "><i class="el-icon-collection-tag"></i>{{tag}}<el-button size="mini" round v-for="item in poetries[i].categories"  style="color:#19537D">{{item.name}}</el-button>
+							 </td>
+			             </tr>
+			             <tr>
+			             <td><div style="height:1rem"></div></td>
+			             </tr>
+					 </table>
 			</div>
 			`,
 			data(){
@@ -260,18 +257,18 @@ a:active{ color:white; text-decoration:none;}
 					poetries:null,
 					categories:null,
 					tag:'tag：',
-					message:'',
+					message:"-加入收藏",
 					selectedId:null
 				}
 			},
 			methods:{
 				jumppoem(){
 				   	const url=new URLSearchParams(window.location.search);
-				   	console.log(url.has('title'));
+				   	
 				   	if(url.has('title')==true)
 				   	{
 						var urltitle = url.get('title');
-				   	   	var uri='/api/poetry/title/'+urltitle;
+				   	   	var uri='/api/poetry/title/'+urltitle+'/start/0/count/10';
 						axios({
 						 	 method: 'get',
 							  url: uri,
@@ -280,17 +277,17 @@ a:active{ color:white; text-decoration:none;}
 					      { 
 					      	if(response.data.code==200)
 					      	{
-						        console.log(response);
 						      	// this.$refs.seachinput.value=response.data.data.name;
 						      	this.poetries = response.data.data;
-						      	this.categories=this.poetries[this.i].categories;
-						      	if(this.poetries[this.i].dynasty=="T")
-						      	{
-						      		this.Dynasty="唐";
-						      	}else {
-						      		this.Dynasty="宋";
-						      	}
-						        this.shortcontent=this.poetries[this.i].content.split('|');
+						      	 this.poetries.forEach(function(c){
+					       			c.content=c.content.split('|');
+					       			if(c.dynasty=="T")
+							      	{
+							      		c.dynasty="唐";
+							      	}else {
+							      		c.dynasty="宋";
+							      	}
+						      	 })
 
 						      	this.judgestar();
 					       	}
@@ -306,14 +303,12 @@ a:active{ color:white; text-decoration:none;}
 				},
 				 
 				  leftjump(){
-				  	console.log(this.poetries.length)
 					 if(this.i==0)
 					 {
 					 	this.i=this.poetries.length-1;
 					 }else {
 					 	this.i--;
 					 }
-					 this.jumppoem();
 					 this.judgestar();
 				  },
 				  rightjump(){
@@ -323,7 +318,6 @@ a:active{ color:white; text-decoration:none;}
 					 }else {
 					 	this.i++;
 					 }
-					 this.jumppoem();
 					 this.judgestar();
 				  },
 				  starpoem(e){
@@ -341,8 +335,10 @@ a:active{ color:white; text-decoration:none;}
 					      		this.message = "-已收藏";						      	
 					       	}
 					       	else{
-					       		this.fail();
-					       		console.log(e.currentTarget.getAttribute('titleid'));
+					       		var msg="";
+					       		if(response.data.message=="用户未登录")
+					       			msg="请先登录";
+					       		this.fail(msg);
 					       	}
 					      })
 					      .catch(function (error) { // 请求失败处理
@@ -351,7 +347,7 @@ a:active{ color:white; text-decoration:none;}
 					}else{
 						axios({
 						 	 method: 'delete',
-							  url: '/api/favours/poetry/'+e.currentTarget.getAttribute('titleid'),
+							  url: '/api/favour/poetry/'+e.currentTarget.getAttribute('titleid'),
 							 })
 					    .then(response =>
 					      { 
@@ -372,8 +368,8 @@ a:active{ color:white; text-decoration:none;}
 				open() {
 			        this.$message('恭喜，收藏成功');
 			      },
-			      fail() {
-			        this.$alert('收藏失败', '抱歉', {
+			      fail(msg) {
+			        this.$alert('收藏失败 '+msg, '抱歉', {
 			          confirmButtonText: '确定',
 			          callback: action => {
 			            this.$message({
@@ -399,8 +395,6 @@ a:active{ color:white; text-decoration:none;}
 			        });
 			      },
 			       judgestar(){
-			      	console.log("进入judgestar");
-			      	console.log(this.poetries);
 					 axios({
 						 	 method: 'get',
 							  url: '/api/favour/poetry/'+this.poetries[this.i].id,
@@ -424,7 +418,7 @@ a:active{ color:white; text-decoration:none;}
 						window.location.href='share.html?titleid='+e.currentTarget.getAttribute('titleid');
 					}		
 				},
-			created:function(){
+			mounted:function(){
 				this.jumppoem();
 			}
 		})
@@ -433,7 +427,7 @@ a:active{ color:white; text-decoration:none;}
 		Vue.component('kuang3-component',{
 			template:`
 			<div v-cloak>
-				<table >
+				<table v-if="poetries">
 					<tr>
 						<td style="width:70rem;">
 							<div style="margin-top:3rem;width:100%;font-size:1.8rem">
@@ -516,10 +510,9 @@ a:active{ color:white; text-decoration:none;}
 						this.updata=false;
 					}
 			    	const url=new URLSearchParams(window.location.search);
-				   	console.log(url.has('title'));
+				   
 				   	if(url.has('title')==true)
 				   	{
-				   		console.log("enter!");
 						var urltitle = url.get('title');
 				   	   	var uri='/api/poetry/title/'+urltitle+'/start/'+this.poemstart+'/count/'+this.poemcount;
 						axios({
@@ -531,8 +524,6 @@ a:active{ color:white; text-decoration:none;}
 					      	if(response.data.code==200)
 					      	{
 					      		this.name=urltitle;
-						        console.log(response);
-						      	// this.$refs.seachinput.value=response.data.data.name;
 						      	this.poetries = response.data.data;
 						      	this.categories=this.poetries.categories;
 						      	

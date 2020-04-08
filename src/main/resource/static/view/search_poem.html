@@ -206,7 +206,7 @@ a:active{  text-decoration:none;}
 		
 		Vue.component('kuang2-component',{
 			template:`
-			<div class="bottom" style="display:inline-block" v-if="poetries">
+			<div class="bottom" style="display:inline-block">
 			
 			<div style="float:right;margin-top:1.5rem;margin-right:10rem" >
 				<i class="el-icon-star-off">&nbsp;
@@ -234,9 +234,9 @@ a:active{  text-decoration:none;}
 						  :titleid=poetries[i].id>
 							 {{poetries[i].title}}</div>
 							<br />
-							<div style="text-align:center;color:grey;">【作者】<span>{{poetries[i].author}}</span>【朝代】<span>{{Dynasty}}</span></div>
+							<div style="text-align:center;color:grey;">【作者】<span>{{poetries[i].author}}</span>【朝代】<span>{{poetries[i].dynasty}}</span></div>
 							<br />
-							<div style="text-align:center;line-height:2.5rem" v-for="item in shortcontent">
+							<div style="text-align:center;line-height:2.5rem" v-for="item in poetries[i].content">
 								{{item}} 
 							</div>		
 							</div>
@@ -248,7 +248,7 @@ a:active{  text-decoration:none;}
 	             </tr>
 	             <tr >
 		            <td style="text-align:left;font-size:large;color:#19537D;columnSpan = '3';
-		           "><i class="el-icon-collection-tag"></i>{{tag}}<el-button size="mini" round v-for="(item,index) in categories"  :key="index" style="color:#19537D">{{item.name}}</el-button>
+		           "><i class="el-icon-collection-tag"></i>{{tag}}<el-button size="mini" round v-for="(item,index) in poetries[i].categories"  :key="index" style="color:#19537D">{{item.name}}</el-button>
 					 </td>
 	             </tr>
 	             <tr>
@@ -263,21 +263,17 @@ a:active{  text-decoration:none;}
 			`,
 			data(){
 				return{
-					
-					Dynasty:'',
 					shortcontent:null,
 					i:0,
 					poetries:null,
-					categories:null,
 					tag:'tag：',
-					message:''
+					message:'-加入收藏'
 				}
 			},
 			methods:{
 				jumppoem(){
 					console.log("进入jumppoem");
 				   	const url=new URLSearchParams(window.location.search);
-				   	console.log(url.has('id'));
 				   	if(url.has('id')==true)
 				   	{
 						var urlid = url.get('id');
@@ -290,17 +286,23 @@ a:active{  text-decoration:none;}
 					      { 
 					      	if(response.data.code==200)
 					      	{
-						        console.log(response);
-						      	// this.$refs.seachinput.value=response.data.data.name;
-						      	this.poetries = response.data.data.poetries;
-						      	this.categories=this.poetries[this.i].categories;
-						      	if(this.poetries[this.i].dynasty=="T")
-						      	{
-						      		this.Dynasty="唐";
-						      	}else {
-						      		this.Dynasty="宋";
-						      	}
-						        this.shortcontent=this.poetries[this.i].content.split('|');
+						       this.poetries = response.data.data.poetries;
+						       	console.log("here1");
+
+						      	 console.log(this.poetries);
+						      	 this.poetries.forEach(function(c){
+					       			c.content=c.content.split('|');
+					       			if(c.dynasty=="T")
+							      	{
+							      		c.dynasty="唐";
+							      	}else {
+							      		c.dynasty="宋";
+							      	}
+						      	 });
+
+									console.log("here2");
+						      	 console.log(this.poetries);
+
 								this.judgestar();
 						      	
 					       	}
@@ -314,14 +316,12 @@ a:active{  text-decoration:none;}
 				  },
 				 
 				  leftjump(){
-				  	console.log(this.poetries.length)
 					 if(this.i==0)
 					 {
 					 	this.i=this.poetries.length-1;
 					 }else {
 					 	this.i--;
 					 }
-					 this.jumppoem();
 					 this.judgestar();
 				  },
 				  rightjump(){
@@ -331,7 +331,6 @@ a:active{  text-decoration:none;}
 					 }else {
 					 	this.i++;
 					 }
-					 this.jumppoem();
 					 this.judgestar();
 				  },
 				
@@ -355,7 +354,10 @@ a:active{  text-decoration:none;}
 					       							      	
 					       	}
 					       	else{
-					       		this.fail();
+					       		var msg="";
+					       		if(response.data.message=="用户未登录")
+					       			msg="请先登录";
+					       		this.fail(msg);
 					       		
 					       	}
 					      })
@@ -365,7 +367,7 @@ a:active{  text-decoration:none;}
 					}else{
 						axios({
 						 	 method: 'delete',
-							  url: '/api/favours/poetry/'+e.currentTarget.getAttribute('titleid'),
+							  url: '/api/favour/poetry/'+e.currentTarget.getAttribute('titleid'),
 							 })
 					    .then(response =>
 					      { 
@@ -386,8 +388,8 @@ a:active{  text-decoration:none;}
 				open() {
 			        this.$message('恭喜，收藏成功');
 			      },
-			      fail() {
-			        this.$alert('收藏失败', '抱歉', {
+			      fail(msg) {
+			        this.$alert('收藏失败 '+msg, '抱歉', {
 			          confirmButtonText: '确定',
 			          callback: action => {
 			            this.$message({

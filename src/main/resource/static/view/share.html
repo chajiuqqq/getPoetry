@@ -11,54 +11,62 @@
 	<script type="text/javascript" src="/js/search.js"></script>
 	<script type="text/javascript" src="/js/navigator.js"></script>
 	<style>
-html{font-size:62.5%;}
-body {font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem; } 
-img { width:100%; -ms-interpolation-mode: bicubic;} 
-	[v-cloak]{
-		display: none;
-	}
-.top{
-	display:inline-block;
-	width:80%;
-	height: 30rem;
-	border: #C8C7BC solid 0.15rem;
-	background-color:#F0EFE2;
-	border-radius: 1.5rem;
-	box-shadow: 0 0.2rem 1.2rem 0 rgba(0, 0, 0, 0.1);
-	margin-left: 10%
-}
-.kuang{
-	display:inline-block;
-	width:85%;
-	height: auto;
-	border: #C8C7BC solid 0.15rem;
-	background-color:#F0EFE2;
-	border-radius: 1.5rem;
-	box-shadow: 0 0.2rem 1.2rem 0 rgba(0, 0, 0, 0.1);
-	margin-top: 1rem;
-	margin-left: 10%;
-	margin-right:10%;
-}
+			html{font-size:62.5%;}
+			body {font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem; } 
+			img { width:100%; -ms-interpolation-mode: bicubic;} 
+				[v-cloak]{
+					display: none;
+				}
+			.top{
+				display:inline-block;
+				width:80%;
+				height: 30rem;
+				border: #C8C7BC solid 0.15rem;
+				background-color:#F0EFE2;
+				border-radius: 1.5rem;
+				box-shadow: 0 0.2rem 1.2rem 0 rgba(0, 0, 0, 0.1);
+				margin-left: 10%
+			}
+			.kuang{
+				display:inline-block;
+				width:85%;
+				height: auto;
+				border: #C8C7BC solid 0.15rem;
+				background-color:#F0EFE2;
+				border-radius: 1.5rem;
+				box-shadow: 0 0.2rem 1.2rem 0 rgba(0, 0, 0, 0.1);
+				margin-top: 1rem;
+				margin-left: 10%;
+				margin-right:10%;
+			}
 
-.left{ width:30%; float:left} 
-.right{ width:70%; float:right;}
-@media screen and (max-device-width: 48rem) {
-    #divMain{
-    float: none;
-    width:auto;
-    }
-    #divSidebar {
-    display:none;
-    }
-}
-table{
-	border-collapse: collapse;
-}
+			.left{ width:30%; float:left} 
+			.right{ width:70%; float:right;}
+			@media screen and (max-device-width: 48rem) {
+			    #divMain{
+			    float: none;
+			    width:auto;
+			    }
+			    #divSidebar {
+			    display:none;
+			    }
+			}
+			table{
+				border-collapse: collapse;
+			}
 
-a{  text-decoration:none;}
-a:hover{  text-decoration:none;}
-a:active{  text-decoration:none;}
+			a{  text-decoration:none;}
+			a:hover{  text-decoration:none;}
+			a:active{  text-decoration:none;}
+
+
+			.pic{
+				box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+				border-radius: 4px;
+			}
+
 	</style>
+
 </head>
 <body style="background-color: #E1E0C7">
 
@@ -68,22 +76,20 @@ a:active{  text-decoration:none;}
 					
 				</common-navigator>
 			
-			<table style="width:100%">
-				<tr>
-					<td>
-						<div style="background-color:pink;display:inline-block;margin: 3rem 30rem;"><img 
-							:src="pic" style="width:90rem;height:45rem;">
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div style="margin-top:1rem;margin-left:45%">
-							<a :href="pic" :download="titlename"><el-button type="primary" icon="el-icon-download">保存图片</el-button></a>
-						</div>
-					</td>
-				</tr>
-			</table>
+				<table style="width:100%" v-if="pic">
+					<tr>
+						<td style="text-align: center;padding-top: 20px">
+							<img :src="pic" class="pic" style="width:90rem;">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div style="margin-top:20px;text-align: center;">
+								<a :href="pic" :download="titlename"><el-button type="primary" icon="el-icon-download">保存图片</el-button></a>
+							</div>
+						</td>
+					</tr>
+				</table>
 			
 			
 			</div>
@@ -92,11 +98,6 @@ a:active{  text-decoration:none;}
 
 
 	<script>
-		
-		
-
-
-		 
 		
 	new Vue({
 		data(){

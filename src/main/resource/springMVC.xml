@@ -20,6 +20,6 @@
     <mvc:resources mapping="/js/**" location="classpath:/static/js/"/>
     <mvc:resources mapping="/view/**" location="classpath:/static/view/"/>
     <mvc:resources mapping="/photo/**" location="classpath:/static/photo/"/>
-    <mvc:resources mapping="/share/**" location="classpath:/static/photo/sharedImg"/>
+    <mvc:resources mapping="/share/**" location="classpath:/static/photo/sharedImg/"/>
 
 </beans>

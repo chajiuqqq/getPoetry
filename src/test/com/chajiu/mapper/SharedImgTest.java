@@ -25,7 +25,7 @@ public class SharedImgTest {
         Poetry poetry=new Poetry();
         poetry.setId(194);
         Poetry one = service.findOne(poetry);
-        String img = SharedImgUtil.makeImg(one, "http://poetry.chajiuqqq.cn", "E:/project/MyPoetry/target/MyPoetry/WEB-INF/classes/");
+        String img = SharedImgUtil.makeImg(one, "http://poetry.chajiuqqq.cn", "E:\\project\\MyPoetry\\src\\main\\resource\\");
         System.out.println(img);
     }
 
