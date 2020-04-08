@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/mapper/SharedImgMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/SharedImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/Impl/SharedImgServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/service/SharedImgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/mapper/SharedImgMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ShareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ShareController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/sharedImg/686956.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/sharedImg/775785.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/sharedImg/868880.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/pojo/Article.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -294,7 +284,7 @@
       <workItem from="1586150676199" duration="1666000" />
       <workItem from="1586159062124" duration="13545000" />
       <workItem from="1586174362299" duration="758000" />
-      <workItem from="1586234263041" duration="6200000" />
+      <workItem from="1586234263041" duration="8837000" />
     </task>
     <servers />
   </component>
