@@ -90,6 +90,7 @@ Vue.component('common-search',{
 			    	 e.target.style.backgroundColor = '';
 			    },
 	   			 Keyup(){
+
 					 var uri='/api/search/'+encodeURI(this.input);
 					 if(this.input!='')
 					 {
@@ -104,8 +105,10 @@ Vue.component('common-search',{
 						        this.sort=response.data.data.categories;
 						      	this.poem=response.data.data.poetries;
 								this.author=response.data.data.authors;
-								
-								this.show=true
+								if(this.sort.length===0 && this.poem.length===0 && this.author.length===0 )	//结果都为空时不显示下拉框
+									this.show=false	
+								else
+									this.show=true
 					      	}else{
 					      		this.show=false
 					      	}
