@@ -49,8 +49,7 @@ public class ShareController {
             String url="http://poetry.chajiuqqq.cn/view/poem.html?titleid="+pid;
 
             try {
-                System.out.println(classpath.getPath().substring(1));
-                String imgName = SharedImgUtil.makeImg(one, url, classpath.getPath().substring(1));   //生成图片并获取文件名
+                String imgName = SharedImgUtil.makeImg(one, url, classpath.getPath());   //生成图片并获取文件名
 
                 imgRecord= new SharedImg(pid, imgName);
                 sharedImgService.addPrefix(imgRecord);  //给imgRecord生成returnURL

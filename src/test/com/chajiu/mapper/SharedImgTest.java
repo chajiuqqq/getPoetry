@@ -31,17 +31,14 @@ public class SharedImgTest {
 
     @Test
     public void save(){
-        SharedImg img=new SharedImg(94,"12345.png");
+        SharedImg img=new SharedImg(9994,"12345.png");
         sharedImgService.save(img);
     }
 
     @Test
     public void find(){
-        SharedImg img = sharedImgService.find(95);
-        if(img==null)
-            System.out.println("dd");
-        else
-            System.out.println("gg");
+        SharedImg img = sharedImgService.find(9994);
+        System.out.println(img.getFileName());
     }
     @Test
     public void del(){
