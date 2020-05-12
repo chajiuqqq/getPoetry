@@ -21,6 +21,7 @@ public class SharedImgUtil {
     public static String makeImg(Poetry poetry, String url,String classpath) throws Exception {
 
         File file=new File(classpath+"static/photo/shareImg.png");
+
         BufferedImage image = ImageIO.read(file);
         Graphics2D graphics = image.createGraphics();
 

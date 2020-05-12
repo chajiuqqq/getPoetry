@@ -2,7 +2,6 @@ package com.chajiu.controller;
 
 
 import com.chajiu.pojo.Favour;
-import com.chajiu.pojo.Poetry;
 import com.chajiu.pojo.User;
 import com.chajiu.response.Response;
 import com.chajiu.response.ResponseCodeType;
@@ -19,6 +18,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * FavourController
+ * @author chajiu
+ * @date 2020/5/6
+ */
 @Controller
 @RequestMapping("/api")
 public class FavourController {
@@ -106,7 +110,7 @@ public class FavourController {
             favour.setPoetryId(pid);
 
             Boolean result = service.exist(favour);
-            Map<String,Boolean> map=new HashMap<>();
+            Map<String,Boolean> map=new HashMap<>(16);
             map.put("hasFavour",result);
             response.setData(map);
         }catch (NullPointerException e){

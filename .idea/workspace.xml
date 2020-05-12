@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.56891817" />
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="MyPoetry:war exploded" />
@@ -7,13 +11,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07872d72-0f2e-4590-9bf0-af3f7c92d2dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MyPoetry_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyPoetry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyPoetry.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ShareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/ShareController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/sharedImg/263913.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/static/view/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/chajiu/mapper/SharedImgTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/controller/FavourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chajiu/util/SharedImgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chajiu/util/SharedImgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/include.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/navigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/js/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/photo/sharedImg/597674.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/flower.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/poem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/search_poem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/search_searchpoem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/share.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/sort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/static/view/usercenter.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +85,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/MyPoetry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource/static/photo" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.204" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -67,6 +100,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\MyPoetry\src\main\resource\static\photo" />
       <recent name="E:\project\MyPoetry\src\main\resource\mapper" />
       <recent name="E:\project\MyPoetry\src\main\resource" />
     </key>
@@ -296,6 +330,14 @@
       <workItem from="1586413762971" duration="2815000" />
       <workItem from="1587017001244" duration="1141000" />
       <workItem from="1587620424857" duration="13000" />
+      <workItem from="1588320861371" duration="666000" />
+      <workItem from="1588321572891" duration="1756000" />
+      <workItem from="1588337154979" duration="213000" />
+      <workItem from="1588337704015" duration="1000000" />
+      <workItem from="1588405783488" duration="437000" />
+      <workItem from="1588765138304" duration="936000" />
+      <workItem from="1588766151967" duration="1164000" />
+      <workItem from="1588767355223" duration="1432000" />
     </task>
     <servers />
   </component>
