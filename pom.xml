@@ -26,7 +26,7 @@
     <commons.logging.version>1.2</commons.logging.version>
     <druid.version>1.1.21</druid.version>
     <fastjson.version>1.2.62</fastjson.version>
-    <jackson.version>2.9.10.3</jackson.version>
+    <jackson.version>2.12.7.1</jackson.version>
     <servlet.version>4.0.1</servlet.version>
   </properties>
 
